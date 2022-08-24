@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍎Delicious Meat-Free Meals,Vegitiarian cuisanis</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .head{
+            width:80%;
+            height:80px;
+        }
+        .head img{
+            width: 30%;
+            display: block;
+            margin-left:45%;
+        }
+        
+        .nav{
+            display: flex;
+            border: 0px solid blue;
+            height: 43px;
+            background-color: #2bb673;
+            width:auto;
+            margin-left:-10px;
+        }
+        .na{
+           border: 0px solid red;
+           width: 70%;
+           margin: auto;
+           font-size:18px;
+           line-height: 40px;
+           font-weight:7px;
+           font-family: Roboto, Arial, Helvetica, sans-serif;
+           color: white;
+           cursor: pointer;
+        }
+        /* end of navbar */
+        .create{
+            border: 2px solid rgb(255, 255, 255);
+            width: 35%;
+            height: auto;
+            margin: auto;
+            margin-top:20px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            margin-bottom: 30px;
+        }
+        input{
+            width:87%;
+            height: 38px;
+            margin-left:30px;
+            margin-bottom:20px;
+            padding:6px 5px;
+            border-radius:5px;
+            margin-top:6px;
+            /* border-width: .1px; */
+            /* border-color:grey; */
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            padding:0px 0px 0px 9px;
+            border: solid 3px #eee;
+
+        }
+        label{
+            height: 40px;
+            margin-left:30px;
+            margin-bottom:15px;
+            margin-bottom:30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:16px;
+            color: rgb(72, 70, 70);
+
+        }
+        h2{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            margin-top: 40px;
+            color: #2bb673;
+        }
+        button{
+            width:88%;
+            height: 40px;
+            display: block;
+            margin: auto;
+            border-radius: 5px;
+            font-weight: bold;
+            border-color:grey;
+            border: none;
+            background-color: rgb(177, 175, 175);
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: #2bb673;
+            color:white ;
+            
+        }
+        #b{
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(39, 39, 158);
+            cursor: pointer;
+        }
+        h3{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-size:16px;
+            margin-top:55px;
+            color: gray;
+            font-weight: lighter;
+            margin-bottom: 20px;
+        }
+        img{
+            width:20%;
+            display: block;
+            margin: auto;
+            margin-top:20px;
+            border-radius:16px;
+        }
+        /* bootom */
+        #green{
+            border: 0px solid green;
+            background-color: #2bb673;
+            font-family: Roboto, Arial, Helvetica, sans-serif;
+            
+        }
+        #green>div h4{
+            margin-bottom:10px;
+            cursor: pointer;
+            margin-top:15px;
+            
+            
+        }
+        #green>div p{
+            font-size:12px;
+            cursor: pointer;
+            margin-bottom:4px;
+        }
+        .grn{
+            width:70%;
+            border: 0px solid green;
+            height: autopx;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(1,280px);
+            gap:10px;
+            margin: auto;
+            color: white;
+        }
+        #p{
+            width:60%;
+            text-align: center;
+            margin: auto;
+        }
+        #p p{
+            font-size: 10px;
+            color: white;
+
+        }
+        
+       
+      
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div>
+            <img src="https://www.kindmeal.my/images/logo-kindmeal.png" alt="">
+        </div>
+    <!-- starting of navbar -->
+    </div>
+    <div class="nav">
+        <table class="na">
+            <td>Home</td>
+            <td>Meal Deals</td>
+            <td>KindMoments</td>
+            <td>Hot Picks</td>
+            <td>Recipes</td>
+            <td>Directory</td>
+            <td>Articles</td>
+            <td>Help</td>
+        </table>
+    </div>
+    <!-- end of navbar -->
+
+    <img src="https://d2skenm2jauoc1.cloudfront.net/assets/restaurant-website-builder/img/pages/why-food-photography-is-important/why-food-photography-is-important-for-restaurants-66727ced1d.png" alt="">
+    <div class="create">
+        <h2>Sign Up</h2>
+        <form>
+            <label for="">Email</label><br>
+            <input id="mail" type="email" placeholder="Enter email"><br>
+            <label for="">Mobile Number</label><br>
+            <input id="mob" type="number" placeholder="Enter your Number"><br>
+            <label for="password">Password</label><br>
+            <input type="password" name="password" id="password" placeholder="Enter password" /><br>
+
+            <button onClick="signup()" type="submit">SIGN UP</button>
+            <h3>Already have an account?
+                <a href="login.html" <span id="b">Login</span></h3></a>
+        
+
+        </form>
+    </div>
+    <div id="green">
+        <div class="grn">
+            <div>
+                <h4 >General</h4>
+                <p>Home</p>
+                <p>Sign Up</p>
+                <p>Businesses / Restaurateurs</p>
+                <p>Advertising</p>
+                <p>About KindMeal.my</p>
+                <p>Help & FAQ</p>
+                <p>Terms & Conditions</p>
+                <p>Inspiring Partners</p>
+                <p>Lifestyle Ambassadors</p>
+                <p>Jobs & Careers</p>
+                <p>Contact Us</p>
+            </div>
+        
+            <div>
+                <h4>Features</h4>
+                <p>Meat-Free Deals</p>
+                <p>Tasty Menus</p>
+                <p>Kind Moments</p>
+                <p>Meat-Free Recipes</p>
+                <p>Member Recommendations</p>
+                <p>Featured Restaurants</p>
+                <p>Vegetarian & Vegan Directory</p>
+                <p>Food Map</p>
+                <p>Become A Superhero</p>
+                <p>Vegan News & Vegetarian Articles</p>
+                <p>Latest Comments</p>
+            </div>
+        
+            <div><h4>Social Media</h4>
+                <p>KindMeal Widget</p>
+                <p>Facebook</p>
+                <p>Twitter</p>
+                <p>Instagram</p>
+            </div>
+        
+            <div>
+                <h4>Mobile</h4>
+                <p>iPhone & iPod App</p>
+                <p> Android App</p>
+                <p> </p>
+                <h4>Exciting Promos</h4>
+                <p>Gadhimai: Ending Mass Slaughter</p>
+                <p>Free Meals</p>
+                <p>Food Bloggers</p>
+                <p>Uber CHIRP</p>
+                <p>Jane Goodall Contest</p>
+                <p> Win Digi iPhone 6</p>
+                <p>Feed The Poor</p>
+                <p>Win Superhero Gifts</p>
+                <p>Win an iPad Mini 3</p>
+            </div>
+        
+            <div>
+                <h4>PetFinder.my</h4>
+                <p>Adopt A Pet</p>
+                <p>Smartphone Apps</p>
+                <p>WAGazine</p>
+                <p>Discussion Forum</p>
+                <p>Medical Fund</p>
+            </div>
+        </div>
+         <!-- <div id="p">
+            <p> Copyright © KindMeal.my, 2014 - 2022. All rights reserved.</p>
+            <p>This website promotes compassionate, meat-free dining experience. Some food may contain eggs, dairy products or alcohol, please view individual listings for details.</p>  -->
+     </div>
+        
+</body>
+</html>
+<script> 
+    function signup(){
+        event.preventDefault()
+        let email=document.getElementById("mail").value;
+        let mobile=document.getElementById("mob").value;
+        let password=document.getElementById("password").value;
+        let user={
+            email:email,
+            mobile:mobile,
+            password:password
+        }
+        localStorage.setItem("user",JSON.stringify(user))
+        // console.log(localStorage.getItem("user"));
+        if(email==""||mobile==""||password==""){
+            alert("Some field is blank")
+        }else{
+            alert("Sign up successful now you can login")
+        }
+        
+        
+    }
+
+
+</script>

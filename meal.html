@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍎Delicious Meat-Free Meals,Vegitiarian cuisanis</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: Roboto, Arial, Helvetica, sans-serif;
+        }
+        .head{
+            width:80%;
+            border: 0px solid black;
+            height: 90px;
+            display: flex;
+            justify-content: space-around;
+            margin: auto;
+
+
+        }
+        #media{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            cursor: pointer;
+        }
+        #media>img{
+            height:40px;margin-top:25px;margin-right:10px;
+
+        }
+        #login{
+            border: 0px solid black;
+            margin-top:18px;
+            justify-content: space-between;
+            width:280px;
+            font-family:Arial, Helvetica, sans-serif;
+            cursor: pointer;
+            
+        }
+        #login td>p{
+            border: 0px solid red;
+
+            font-size: 13px;
+            cursor: pointer;
+        }
+        #fb{
+            width: 80px;
+            height: 25px;
+            line-height: 20px;
+            padding: 2px 2px 2px 2px;
+            background-color: #35619f;
+            font-weight: bold;
+            font-size: 13px;
+            text-align: center;
+            border-radius: 5px;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+        }
+        #em{
+            width: 80px;
+            height: 26px;
+            line-height: 20px;
+            padding: 2px 2px 2px 2px;
+            background-color: #666666;
+            font-weight: bold;
+            font-size: 13px;
+            text-align: center;
+            border-radius: 5px;
+            border: none;
+            color: white;
+        }
+        .nav{
+            display: flex;
+            border: 0px solid blue;
+            height: 43px;
+            background-color: #2bb673;
+            width:auto;
+            margin-left:-10px;
+        }
+        .na{
+           border: 0px solid red;
+           width: 70%;
+           margin: auto;
+           font-size:18px;
+           line-height: 40px;
+           font-weight:7px;
+           font-family: Roboto, Arial, Helvetica, sans-serif;
+           color: white;
+           cursor: pointer;
+        }
+        .na td{
+            border: 0px solid black;
+            text-align: center;
+        }
+        .na td:hover{
+            border: 0px solid black;
+            background-color: #229760;
+        }
+        /* end of navbar */
+        .introbox{
+            border: 0px solid green;
+            background-color: #f0f0f0;
+            padding:22px 0px 0px 0px;
+        }
+        .intro{
+            border: 0px solid red;
+            width:70%;
+            margin: auto;
+            height:200px;
+            margin-top:0px;
+
+        }
+        .intro>div+div p{
+            font-size:14px;
+            font-weight:22px;
+        }
+        .intro>div+div{
+            margin-top:10px;
+        }
+        input{
+            width: 220px;height: 30px;
+            padding:0px 0px 0px 5px;
+            border-radius:5px;box-shadow: none;
+            font-size: 14px;
+            background-color: #ffffff;
+            margin-right:15px;
+            cursor: pointer;
+            border: solid 3px #eee;
+        }
+        select{
+            width:150px;height: 34px;
+            font-size: 16px;
+            border-radius: 5px;box-shadow:none;
+            margin-right:15px;
+            cursor: pointer;
+            border: solid 3px #eee;
+        }
+        #search{
+            width: 150px;height: 35px;
+            border-radius: 6px;
+            background-color: #f53838;color: white;
+            font-size: 16px;line-height: 19px;border: none;
+            font-weight: bold;
+            margin-left:20px;
+            cursor: pointer;
+        }
+        #search:hover{
+            background-color: #a30000;
+        }
+        #browse{
+            width: 213px;height: 35px;
+            border-radius: 6px;
+            background-color: #04be5a;color: white;
+            font-size: 16px;line-height: 19px;border: none;
+            font-weight: bold;
+            margin-left: 38px;
+            cursor: pointer;
+        }
+        #browse:hover{
+            background-color:#007e3b;
+        }
+        .Mimg{
+            width: 70%;
+            border: 0px solid black;
+            margin: auto;
+            margin-top:43px;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        }
+        .Mimg img{
+            border: 0px solid red;
+            width: 100%;
+        }
+       /* starting of number column */
+        .Pno{
+            border: 0px solid blue;
+            width: 70%;
+            margin: auto;
+            display: flex; 
+            margin-top:20px;
+
+
+        }
+        .Pno>div{
+            border: 0px solid red;
+            width:40px;
+            text-align: center;
+            margin-top:5px;
+            font-size: 14px;
+            cursor: pointer;
+            display: grid;
+            align-items: center;
+
+        }
+        #nxt{
+            width:80%;
+            text-align: end;
+            padding:0px 15px 0px 0px;
+        }
+        #nxt >div button{
+            border: 0px solid blue;
+            width: 60px;height: 25px;
+            border-radius:4px;
+            background-color: #e8e8e8;
+            color: #444444;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        #one{
+            border: 0px solid rgb(25, 42, 0);
+            width: 25px;height: 25px;
+            background-color: #e8e8e8;
+            color: #444444;
+            display: grid;
+            align-items: center;
+            
+        }
+        /* ending of no column */
+        #container{
+            border: 0px solid red;
+            width:70%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: auto;
+            gap:24px;
+            margin-top:-20px;
+        }
+        .boxs{
+            width:98%;height: auto;
+            border: 0px solid blue;
+            margin: auto;
+            margin-top: 40px;
+            border-radius: 10px;
+            box-shadow:rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            
+        }
+        .dises{
+            border: 0px solid green;
+            position: relative;
+            
+        }
+        .dises>img{
+            width: 100%;border-radius:10px 10px 0px 0px;
+            cursor: pointer;
+        }
+        #per{
+            border: 0px solid blue;
+            width: 60px;height: 60px;
+            color: red;
+            position: absolute;
+            margin-left:20px;
+            text-align: center;
+            display: grid;
+            align-items: center;
+            border-radius: 30px;
+            font-size: 22px;
+            background-color: white;
+            opacity:88%;color: #444444;
+        }
+        #bot{
+            border: 0px solid blue;
+            width:100%;height: 38px;
+            position: absolute;
+            text-align: center;
+            font-size: 22px;
+            bottom: -10px;
+            color: green;
+            background-color: #000000;
+            opacity:40%;color: #ffffff;
+            margin-bottom:15px;
+
+        }
+        #discount{
+            display: flex;
+            justify-content: space-between;padding:0px 6px 0px 6px;
+            margin-top:10px;margin-bottom:6px;
+            
+        }
+        #coupan{
+            width:180px;height:38px;
+            border-radius:6px;
+            background-color: #f53838;color: #ffffff;
+            font-size: 18px;text-align: center;
+            font-weight: bold;border: none;
+            cursor: pointer;
+
+        }
+        #coupan:hover{
+            background-color: #a30000;
+        }
+        .line{
+            padding:0px 6px 0px 6px;
+            color: #444444;
+            margin-top:20px;
+        }
+        .line>p+p{
+            margin-top:10px;
+        }
+        .ingre{
+            border: 0px solid green;
+            display: grid;
+            grid-template-columns: 130px 255px 123px;
+            grid-template-rows: 63px;
+            /* gap:10px; */
+            margin: auto;
+        }
+        .ingre>div{
+            border: 0px solid black;
+            box-shadow:rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            border-collapse: separate;
+            text-align: center;
+            line-height:-4px;
+            border-radius: 0px 0px 2px 2px;
+            
+        }
+        .ingre>div img{
+            width:35px;
+            margin-top:15px;
+            
+            
+            cursor: pointer;
+        }
+        .ingre>div+div>p+p{
+            border: 0px solid red;
+            font-size: 26px;
+            margin-top:4px;
+            color: red;
+        }
+        .ingre>div+div>p{
+            margin-top:6px;
+        }
+        .ingre>div:nth-child(3){
+            border: 1px soild blue;
+
+        }
+        #gray{
+            color:#444444;
+        }
+        .banner{
+            border: 0px solid black;
+            margin-top:90px;
+            background-color: #e0e0e0;
+            height:280px;
+        }
+        .banner>div{
+            border: 0px solid blue;
+            width: 70%;
+            margin: auto;
+            
+        }
+        .banner>div>img{
+            margin-top:23px;
+        }
+        #green{
+            border: 1px solid green;
+            background-color: #2bb673;
+            
+        }
+        #green>div h4{
+            margin-bottom:10px;
+            cursor: pointer;
+            margin-top:10px;
+            
+        }
+        #green>div p{
+            font-size:12px;
+            margin-bottom:5px;
+            margin-top: 0px;
+            cursor: pointer;
+        }
+        .grn{
+            width:60%;
+            border: 0px solid green;
+            height: 310px;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(1,290px);
+            gap:10px;
+            margin: auto;
+            color: white;
+        }
+        #p{
+            width:60%;
+            text-align: center;
+            margin: auto;
+        }
+        #p p{
+            font-size: 10px;
+            color: white;
+            margin-bottom:10px;
+
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div>
+            <img src="https://www.kindmeal.my/images/logo-kindmeal.png" alt="">
+        </div>
+
+        <div id="media">
+            <img  src="https://www.kindmeal.my/images/follow_blog_grey.png" alt="">
+            <img  src="https://www.kindmeal.my/images/follow_facebook_grey.png" alt="">
+            <img  src="https://www.kindmeal.my/images/follow_twitter_grey.png" alt="">
+        </div>
+
+        <div>
+            <table id="login">
+                <td> <p >Login</td>
+                <td><button  id="fb" onclick="LoginFB();"title="Login with Facebook Account">Facebook</button>
+                <td> <button id="em" onclick="email()">Email</button>
+                <td><p id="signup" onclick="signup()">Sign up</td>
+            </table>
+        </div>
+    <!-- starting of navbar -->
+    </div>
+    <div class="nav">
+        <table class="na">
+            <td onClick="home()">Home</td>
+            <td onClick="meal()">Meal Deals</td>
+            <td onClick="kind()">KindMoments</td>
+            <td onClick="hot()">Hot Picks</td>
+            <td onClick="recipe()">Recipes</td>
+            <td onClick="dir()">Directory</td>
+            <td onClick="art()">Articles</td>
+            <td onClick="hlp()">Help</td>
+        </table>
+    </div>
+    <div class="introbox">
+        <div class="intro">
+            <div><p style="font-size:28px;color: #444444;">Meat-Free Deals <span style="color:gray;margin-right:6px;margin-left:6px;">|</span> <span style="color:gray;font-size:24px;">Restaurants In Malaysia</span> </p></div>
+            <div>
+                <p>Browse delicious meat-free, vegetarian deals from top restaurants and cafes! Just click on "Get Free Coupon" to obtain instant discounts and dine at the restaurants.</p>
+                <p>No upfront payment, booking or printing is needed. If you share it on social media, you'll even DOUBLE your discount!</p>
+                <p style="margin-top:18px;margin-bottom:18px;">Download our <span style="color:#2184ff;cursor:pointer;">mobile app</span> now to easily get coupons and start dining in a few seconds. Effortlessly save lives, health, environment and money now!</p>
+            </div>
+            <div>
+                <input type="text" placeholder="Search Shop or Deal Name">
+                <select name="All Categories" id="dish">
+                    <option value="">All Categories</option>
+                    <option value="">Pasta</option>
+                    <option value="">Burger</option>
+                    <option value="">Breakfast</option>
+                    <option value="">Indian food</option>
+                    <option value="">Lunch</option>
+                    <option value="">Veg. Biryani</option>
+                    <option value="">Manchurian Soup</option>
+                </select>
+                <select name="All Categories" id="location">
+                    <option value="">All location</option>
+                    <option value="">Mont kiara</option>
+                    <option value="">Ipoh</option>
+                    <option value="">kepong</option>
+                    <option value="">Ampang</option>
+                    <option value="">Cheras</option>
+                    <option value="">katis</option>
+                    <option value="">Murfis</option>
+                </select>
+                <button id="search">Search Deals</button>
+                <button id="browse">Browse Restaurants</button>
+            </div>
+        </div>
+    </div>
+    <div class="Mimg">
+        <img src="https://www.kindmeal.my/images/banner_recipe.jpg" alt="">
+    </div>
+    <!-- number row -->
+    <div class="Pno">
+        <div>Page:</div>
+        <div id="one">1</div>
+        <div style="color: #4186f2;">2</div>
+        <div style="color: #4186f2;">3</div>
+        <div style="color: #4186f2;">4</div>
+        <div style="color: #4186f2;">5</div>
+        <div style="color: #4186f2;">6</div>
+        <div style="color: #4186f2;">7</div>
+        <div id="nxt">
+            <div><button>Next »</button></div>
+        </div>
+    </div>
+    <!-- end of number col portion -->
+    <div id="container">
+        <div class="boxs">
+            <div class="dises">
+                <p id="per">-10%</p>
+                <img src="https://www.kindmeal.my/photos/deal/7/720-5195-l.jpg" alt="">
+                <p id="bot">Yishensu Groceries @ Ipoh</p>
+            </div>
+            <div class="line">
+                <p> <span style="font-size:23px"> Yishensu Groceries, Ipoh</span>—ipoh Pereak</p>
+                <p>Yishensu Groceries, Ipoh offers you a wide range of healthy, nutritious and tasty vegetarian products! ..</p>
+            </div>
+            <div id="discount">
+                <button id="coupan">Get FREE Coupon</button>
+                <img style="width:180px;height: 41px;" src="https://www.linkpicture.com/q/str0.png" alt="">
+            </div>
+            <div class="ingre">
+                <div>
+                    <img src="https://www.kindmeal.my/images/icon_egg.png" alt="">
+                    <img src="https://www.kindmeal.my/images/icon_milk_disabled.png" alt="">
+                    <img src="https://www.kindmeal.my/images/icon_alcohol_disabled.png" alt="">
+                </div>
+                <div>
+                    <p >KindMeal Discount</p>
+                    <p >10% Off</p>
+                </div>
+                <div>
+                    <p >Expires In</p>
+                    <p id="gray">5 Days</p>
+                </div>
+            </div>
+        </div>
+        <!-- 2nd -->
+        <div class="boxs">
+            <div class="dises">
+                <p id="per">-10%</p>
+                <img src="https://www.kindmeal.my/photos/deal/6/649-3919-l.jpg" alt="">
+                <p id="bot">Fusion western delicious</p>
+            </div>
+            <div class="line">
+                <p> <span style="font-size:23px">Vegelab</span>—  Cheras, Kuala Lumpur</p>
+                <p>Experience our delectable selection of fusion Western cuisine, crafted with heart to promote a healthy and compassionate eating li..</p>
+            </div>
+            <div id="discount">
+                <button id="coupan">Get FREE Coupon</button>
+                <img style="width:180px;height: 41px;" src="https://www.linkpicture.com/q/str9.png" alt="">
+            </div>
+            <div class="ingre">
+                <div>
+                    <img  src="https://www.kindmeal.my/images/icon_egg.png" alt="">
+                    <img  src="https://www.kindmeal.my/images/icon_milk_disabled.png" alt="">
+                    <img  src="https://www.kindmeal.my/images/icon_alcohol_disabled.png" alt="">
+                </div>
+                <div>
+                    <p >KindMeal Discount</p>
+                    <p >10% Off</p>
+                </div>
+    
+                <div>
+                    <p >Expires In</p>
+                    <p id="gray">7 Days</p>
+                </div>
+            </div>
+    
+        </div>
+        <!-- 3rd -->
+        <div class="boxs">
+            <div class="dises">
+                <p id="per">-10%</p>
+                <img src="https://www.kindmeal.my/photos/deal/7/712-5119-l.jpg" alt="">
+                <p id="bot">Malaysian Vegan Experience</p>
+            </div>
+            <div class="line">
+                <p> <span style="font-size:23px">Hijau</span>—  Kuala Lumpur, Wilayah Persekutuan</p>
+                <p>Indulge in Malay-Indo fusion cuisine, a plant-based comfort food 
+                    and healthy pleasure! Hijau is your go-to, where you can embrac..</p>
+            </div>
+            <div id="discount">
+                <button id="coupan">Get FREE Coupon</button>
+                <img style="width:180px;height: 41px;" src="https://www.linkpicture.com/q/str16.png" alt="">
+            </div>
+            <div class="ingre">
+                <div>
+                    <img  src="https://www.kindmeal.my/images/icon_egg_disabled.png" alt="">
+                    <img  src="https://www.kindmeal.my/images/icon_milk_disabled.png" alt="">
+                    <img  src="https://www.kindmeal.my/images/icon_alcohol_disabled.png" alt="">
+                </div>
+                <div>
+                    <p >KindMeal Discount</p>
+                    <p >10% Off</p>
+                </div>
+    
+                <div>
+                    <p >Expires In</p>
+                    <p id="gray">5 Days</p>
+                </div>
+            </div>
+    
+        </div>
+        <!-- 4 -->
+        <div class="boxs">
+            <div class="dises">
+                <p id="per">-20%</p>
+                <img src="https://www.kindmeal.my/photos/deal/6/610-3386-l.jpg" alt="">
+                <p id="bot">Asian Experience</p>
+            </div>
+            <div class="line">
+                <p> <span style="font-size:23px">Cameleon Vegetarian Restaurant</span>—Kuala Lumpur,</p>
+                <p>Indulge in Malay-Indo fusion cuisine, a plant-based comfort food 
+                    and healthy pleasure! Hijau is your go-to, where you can embrac..</p>
+            </div>
+            <div id="discount">
+                <button id="coupan">Get FREE Coupon</button>
+                <img style="width:180px;height: 41px;" src="https://www.linkpicture.com/q/str9.png" alt="">
+            </div>
+            <div class="ingre">
+                <div>
+                    <img  src="https://www.kindmeal.my/images/icon_egg.png" alt="">
+                    <img  src="https://www.kindmeal.my/images/icon_milk_disabled.png" alt="">
+                    <img  src="https://www.kindmeal.my/images/icon_alcohol_disabled.png" alt="">
+                </div>
+                <div>
+                    <p >KindMeal Discount</p>
+                    <p >20% Off</p>
+                </div>
+    
+                <div>
+                    <p >Expires In</p>
+                    <p id="gray">3 Days</p>
+                </div>
+            </div>
+    
+        </div>
+        <!-- 5 -->
+        <div class="boxs">
+            <div class="dises">
+                <p id="per">-20%</p>
+                <img src="https://www.kindmeal.my/photos/deal/3/383-1189-l.jpg" alt="">
+                <p id="bot">Dinning boil Asian delicious</p>
+            </div>
+            <div class="line">
+                <p> <span style="font-size:23px">Dining Bowl</span>—  Kuala Lumpur</p>
+                <p>Dine in this authentic cozy Chinese environment with any items 
+                     from  fresh and quality the menu, made with fresh and quality ingredients, in an envir..</p>
+            </div>
+            <div id="discount">
+                <button id="coupan">Get FREE Coupon</button>
+                <img style="width:180px;height: 41px;" src="https://www.linkpicture.com/q/str1.png" alt="">
+            </div>
+            <div class="ingre">
+                <div>
+                    <img  src="https://www.kindmeal.my/images/icon_egg_disabled.png" alt="">
+                    <img  src="https://www.kindmeal.my/images/icon_milk.png" alt="">
+                    <img  src="https://www.kindmeal.my/images/icon_alcohol_disabled.png" alt="">
+                </div>
+                <div>
+                    <p >KindMeal Discount</p>
+                    <p >20% Off</p>
+                </div>
+    
+                <div>
+                    <p >Expires In</p>
+                    <p id="gray">1 Days</p>
+                </div>
+            </div>
+    
+        </div>
+        <!-- 6 -->
+        <div class="boxs">
+            <div class="dises">
+                <p id="per">-20%</p>
+                <img src="https://www.kindmeal.my/photos/deal/6/626-3611-l.jpg" alt="">
+                <p id="bot">Delicious chola</p>
+            </div>
+            <div class="line">
+                <p> <span style="font-size:23px">Ssihat Kafe</span>—  Melaka
+                <p>Ignite your taste buds with indian spices and flavours at Melaka's 
+                    only Indian fully Vegetarian Cafe. We humbly welcome you and y..</p>
+            </div>
+            <div id="discount">
+                <button id="coupan">Get FREE Coupon</button>
+                <img style="width:180px;height: 41px;" src="https://www.linkpicture.com/q/str16_1.png" alt="">
+            </div>
+            <div class="ingre">
+                <div>
+                    <img  src="https://www.kindmeal.my/images/icon_egg.png" alt="">
+                    <img  src="https://www.kindmeal.my/images/icon_milk_disabled.png" alt="">
+                    <img  src="https://www.kindmeal.my/images/icon_alcohol.png" alt="">
+                </div>
+                <div>
+                    <p >KindMeal Discount</p>
+                    <p >20% Off</p>
+                </div>
+    
+                <div>
+                    <p >Expires In</p>
+                    <p id="gray">8 Days</p>
+                </div>
+            </div>
+    
+        </div>
+        <!-- 7 -->
+        <div class="boxs">
+            <div class="dises">
+                <p id="per">-30%</p>
+                <img src="https://www.kindmeal.my/photos/deal/4/457-2109-l.jpg" alt="">
+                <p id="bot">Flavours around the world</p>
+            </div>
+            <div class="line">
+                <p> <span style="font-size:23px">The Black Cat Cafe</span>— Wilayah Persekutuan</p>
+                <p>Western and Asian cuisine, all prepared in our humble kitchen with utmost passion and love. On Weekdays, select ANY items from ..</p>
+            </div>
+            <div id="discount">
+                <button id="coupan">Get FREE Coupon</button>
+                <img style="width:180px;height: 41px;" src="https://www.linkpicture.com/q/str1.png" alt="">
+            </div>
+            <div class="ingre">
+                <div>
+                    <img  src="https://www.kindmeal.my/images/icon_egg.png" alt="">
+                    <img  src="https://www.kindmeal.my/images/icon_milk_disabled.png" alt="">
+                    <img  src="https://www.kindmeal.my/images/icon_alcohol.png" alt="">
+                </div>
+                <div>
+                    <p >KindMeal Discount</p>
+                    <p >30% Off</p>
+                </div>
+    
+                <div>
+                    <p >Expires In</p>
+                    <p id="gray">7 Days</p>
+                </div>
+            </div>
+    
+        </div>
+        <!-- 8 -->
+        <div class="boxs">
+            <div class="dises">
+                <p id="per">-10%</p>
+                <img src="https://www.kindmeal.my/photos/deal/7/712-5119-l.jpg" alt="">
+                <p id="bot">Malaysian Vegan Experience</p>
+            </div>
+            <div class="line">
+                <p> <span style="font-size:23px">Hijau</span>—  Kuala Lumpur, Wilayah Persekutuan</p>
+                <p>Indulge in Malay-Indo fusion cuisine, a plant-based comfort food 
+                    and healthy pleasure! Hijau is your go-to, where you can embrac..</p>
+            </div>
+            <div id="discount">
+                <button id="coupan">Get FREE Coupon</button>
+                <img style="width:180px;height: 41px;" src="https://www.linkpicture.com/q/str16.png" alt="">
+            </div>
+            <div class="ingre">
+                <div>
+                    <img  src="https://www.kindmeal.my/images/icon_egg.png" alt="">
+                    <img  src="https://www.kindmeal.my/images/icon_milk.png" alt="">
+                    <img  src="https://www.kindmeal.my/images/icon_alcohol_disabled.png" alt="">
+                </div>
+                <div>
+                    <p >KindMeal Discount</p>
+                    <p >10% Off</p>
+                </div>
+    
+                <div>
+                    <p >Expires In</p>
+                    <p id="gray">1 Days</p>
+                </div>
+            </div>
+    
+        </div>
+        <!-- 9 -->
+        <div class="boxs">
+            <div class="dises">
+                <p id="per">-20%</p>
+                <img src="https://www.kindmeal.my/photos/deal/4/403-1390-l.jpg" alt="">
+                <p id="bot">Wellness meal +10 diffrent dishes</p>
+            </div>
+            <div class="line">
+                <p> <span style="font-size:23px">Juve Wellness Puchong</span>—  Puchong, Selangor</p>
+                <p>Select from Ala Carte meal items from the menu, served with a cup of Wellness Tea! Featured food menu items include: Juve Four Se..</p>
+            </div>
+            <div id="discount">
+                <button id="coupan">Get FREE Coupon</button>
+                <img style="width:180px;height: 41px;" src="https://www.linkpicture.com/q/str1.png" alt="">
+            </div>
+            <div class="ingre">
+                <div>
+                    <img  src="https://www.kindmeal.my/images/icon_egg_disabled.png" alt="">
+                    <img  src="https://www.kindmeal.my/images/icon_milk.png" alt="">
+                    <img  src="https://www.kindmeal.my/images/icon_alcohol.png" alt="">
+                </div>
+                <div>
+                    <p >KindMeal Discount</p>
+                    <p >20% Off</p>
+                </div>
+    
+                <div>
+                    <p >Expires In</p>
+                    <p id="gray">6 Days</p>
+                </div>
+            </div>
+    
+        </div>
+        <!-- 10 -->
+        <div class="boxs">
+            <div class="dises">
+                <p id="per">-20%</p>
+                <img src="https://www.kindmeal.my/photos/deal/5/529-2478-l.jpg" alt="">
+                <p id="bot">Scrumptious Crountas</p>
+            </div>
+            <div class="line">
+                <p> <span style="font-size:23px">Croutons Cafe </span>—  Kuala Lumpur, Wilayah Persekutuan</p>
+                <p>Croutons brings you a sumptuous variety of international cuisines. Indulge in any of the meat-free items from our menu below: • ..</p>
+            </div>
+            <div id="discount">
+                <button id="coupan">Get FREE Coupon</button>
+                <img style="width:180px;height: 41px;" src="https://www.linkpicture.com/q/str16.png" alt="">
+            </div>
+            <div class="ingre">
+                <div>
+                    <img  src="https://www.kindmeal.my/images/icon_egg.png" alt="">
+                    <img  src="https://www.kindmeal.my/images/icon_milk.png" alt="">
+                    <img  src="https://www.kindmeal.my/images/icon_alcohol.png" alt="">
+                </div>
+                <div>
+                    <p >KindMeal Discount</p>
+                    <p >20% Off</p>
+                </div>
+    
+                <div>
+                    <p >Expires In</p>
+                    <p id="gray">13 Days</p>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- number row -->
+     <div class="Pno">
+        <div>Page:</div>
+        <div id="one">1</div>
+        <div style="color: #4186f2;">2</div>
+        <div style="color: #4186f2;">3</div>
+        <div style="color: #4186f2;">4</div>
+        <div style="color: #4186f2;">5</div>
+        <div style="color: #4186f2;">6</div>
+        <div style="color: #4186f2;">7</div>
+        <div id="nxt">
+            <div><button>Next »</button></div>
+        </div>
+    </div>
+    <!-- end of number col portion -->
+    <div class="banner">
+        <div>
+            <img src="https://www.kindmeal.my/images/how_kindmeal_works.png" alt="">
+        </div>
+    </div>
+    <div id="green">
+        <div class="grn">
+            <div>
+                <h4 >General</h4>
+                <p>Home</p>
+                <p>Sign Up</p>
+                <p>Businesses / Restaurateurs</p>
+                <p>Advertising</p>
+                <p>About KindMeal.my</p>
+                <p>Help & FAQ</p>
+                <p>Terms & Conditions</p>
+                <p>Inspiring Partners</p>
+                <p>Lifestyle Ambassadors</p>
+                <p>Jobs & Careers</p>
+                <p>Contact Us</p>
+            </div>
+        
+            <div>
+                <h4>Features</h4>
+                <p>Meat-Free Deals</p>
+                <p>Tasty Menus</p>
+                <p>Kind Moments</p>
+                <p>Meat-Free Recipes</p>
+                <p>Member Recommendations</p>
+                <p>Featured Restaurants</p>
+                <p>Vegetarian & Vegan Directory</p>
+                <p>Food Map</p>
+                <p>Become A Superhero</p>
+                <p>Vegan News & Vegetarian Articles</p>
+                <p>Latest Comments</p>
+            </div>
+        
+            <div><h4>Social Media</h4>
+                <p>KindMeal Widget</p>
+                <p>Facebook</p>
+                <p>Twitter</p>
+                <p>Instagram</p>
+            </div>
+        
+            <div>
+                <h4>Mobile</h4>
+                <p>iPhone & iPod App</p>
+                <p> Android App</p>
+                <p> </p>
+                <h4>Exciting Promos</h4>
+                <p>Gadhimai: Ending Mass Slaughter</p>
+                <p>Free Meals</p>
+                <p>Food Bloggers</p>
+                <p>Uber CHIRP</p>
+                <p>Jane Goodall Contest</p>
+                <p> Win Digi iPhone 6</p>
+                <p>Feed The Poor</p>
+                <p>Win Superhero Gifts</p>
+                <p>Win an iPad Mini 3</p>
+            </div>
+        
+            <div>
+                <h4>PetFinder.my</h4>
+                <p>Adopt A Pet</p>
+                <p>Smartphone Apps</p>
+                <p>WAGazine</p>
+                <p>Discussion Forum</p>
+                <p>Medical Fund</p>
+            </div>
+        </div>
+        <div id="p">
+            <p> Copyright © KindMeal.my, 2014 - 2022. All rights reserved.</p>
+            <p>This website promotes compassionate, meat-free dining experience. Some food may contain eggs, dairy products or alcohol, please view individual listings for details.</p> 
+     </div>
+    
+    
+</body>
+<script>
+    function LoginFB(){
+        document.location.href="https://www.facebook.com/login.php?skip_api_login=1&api_key=292733157519852&kid_directed_site=0&app_id=292733157519852&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv2.9%2Fdialog%2Foauth%3Fclient_id%3D292733157519852%26redirect_uri%3Dhttps%253A%252F%252Fwww.kindmeal.my%252Flogin.php%253Faction%253Dfacebook%26state%3Da20fd889828c43e49d9cb9572ee509de%26display%3Dpopup%26scope%3Demail%252Cuser_birthday%252Cuser_location%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D093ae1bb-7c73-4185-9c66-d2d5fa050cf8%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.kindmeal.my%2Flogin.php%3Faction%3Dfacebook%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3Da20fd889828c43e49d9cb9572ee509de%23_%3D_&display=popup&locale=en_GB&pl_dbl=0"
+    }
+    function email(){
+        document.location.href="https://www.google.com/intl/en_in/gmail/about/"
+    }
+    function signup(){
+        document.location.href="signup.html"
+    }
+    function home(){
+        document.location.href="index.html"
+    }
+    function meal(){
+        document.location.href="meal.html"
+    }
+    function art(){
+        document.location.href=""
+    }
+    function hlp(){
+        document.location.href=""
+    }
+    function dir(){
+        document.location.href=""
+    }
+    function hot(){
+        document.location.href="https://www.kindmeal.my/hotpicks.htm"
+    }
+    function recipe(){
+        document.location.href=""
+    }
+    function kind(){
+        document.location.href=""
+    }
+</script>
+</html>

@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>>🍎Delicious Meat-Free Meals,Vegitiarian cuisanis</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: Roboto, Arial, Helvetica, sans-serif;
+        }
+        .head{
+            width:80%;
+            border: 0px solid black;
+            height: 90px;
+            display: flex;
+            justify-content: space-around;
+            margin: auto;
+
+
+        }
+        #media{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            cursor: pointer;
+        }
+        #media>img{
+            height:40px;margin-top:25px;margin-right:10px;
+
+        }
+        #login{
+            border: 0px solid black;
+            margin-top:18px;
+            justify-content: space-between;
+            width:280px;
+            font-family:Arial, Helvetica, sans-serif;
+            cursor: pointer;
+            
+        }
+        #login td>p{
+            border: 0px solid red;
+
+            font-size: 13px;
+            cursor: pointer;
+        }
+        #fb{
+            width: 80px;
+            height: 25px;
+            line-height: 20px;
+            padding: 2px 2px 2px 2px;
+            background-color: #35619f;
+            font-weight: bold;
+            font-size: 13px;
+            text-align: center;
+            border-radius: 5px;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+        }
+        #em{
+            width: 80px;
+            height: 26px;
+            line-height: 20px;
+            padding: 2px 2px 2px 2px;
+            background-color: #666666;
+            font-weight: bold;
+            font-size: 13px;
+            text-align: center;
+            border-radius: 5px;
+            border: none;
+            color: white;
+        }
+        .nav{
+            display: flex;
+            border: 0px solid blue;
+            height: 43px;
+            background-color: #2bb673;
+            width:auto;
+            margin-left:-10px;
+        }
+        .na{
+           border: 0px solid red;
+           width: 70%;
+           margin: auto;
+           font-size:1.2vw;
+           line-height: 40px;
+           font-weight:7px;
+           font-family: Roboto, Arial, Helvetica, sans-serif;
+           color: white;
+           cursor: pointer;
+        }
+        .na td{
+            border: 0px solid black;
+            text-align: center;
+        }
+        .na td:hover{
+            border: 0px solid black;
+            background-color: #229760;
+        }
+        /* end of navbar */
+        .introbox{
+            border: 0px solid green;
+            background-color: #f0f0f0;
+            padding:22px 0px 0px 0px;
+        }
+        .intro{
+            border: 0px solid red;
+            width:70%;
+            margin: auto;
+            height:200px;
+            margin-top:0px;
+
+        }
+        .intro>div+div p{
+            font-size:14px;
+            font-weight:22px;
+        }
+        .intro>div+div{
+            margin-top:10px;
+        }
+        input{
+            width: 24%;height: 33px;
+            padding:0px 0px 0px 5px;
+            border-radius:5px;box-shadow: none;
+            font-size: 14px;
+            background-color: #ffffff;
+            margin-right:20px;
+            cursor: pointer;
+            border: solid 3px #eee;
+            
+        }
+        select{
+            width:21%;height: 35px;
+            font-size: 16px;
+            border-radius: 5px;box-shadow:none;
+            margin-right:40px;
+            cursor: pointer;
+            border: solid 3px #eee;
+        }
+        #search{
+            width: 150px;height: 35px;
+            border-radius: 6px;
+            background-color: #f53838;color: white;
+            font-size: 16px;line-height: 19px;border: none;
+            font-weight: bold;
+            margin-left:10px;
+            cursor: pointer;
+        }
+        #search:hover{
+            background-color: #a30000;
+        }
+        #browse{
+            width: 15%;height: 35px;
+            border-radius: 6px;
+            background-color: #04be5a;color: white;
+            font-size: 16px;line-height: 19px;border: none;
+            font-weight: bold;
+            margin-left: 140px;
+            cursor: pointer;
+        }
+        #browse:hover{
+            background-color:#007e3b;
+        }
+        .Btn{
+            width:70%;
+            margin: auto;
+            margin-top:30px;
+        }
+        .Btn button{
+            width:20%;height:36px;
+            margin-right:30px;
+            border-radius:5px;
+            border: 1px solid rgb(218, 217, 217);
+            color: #666666;
+            font-size:14px;
+            cursor: pointer;
+        }
+        .Pno{
+            border: 0px solid blue;
+            width: 70%;
+            margin: auto;
+            display: flex; 
+            margin-top:30px;
+            margin-bottom:20px;
+
+
+        }
+        .Pno>div{
+            border: 0px solid red;
+            width:40px;
+            text-align: center;
+            margin-top:5px;
+            font-size: 14px;
+            cursor: pointer;
+            display: grid;
+            align-items: center;
+
+        }
+        #nxt{
+            width:56%;
+            text-align: end;
+            padding:0px 15px 0px 0px;
+        }
+        #nxt >div button{
+            border: 0px solid blue;
+            width: 60px;height: 25px;
+            border-radius:4px;
+            background-color: #e8e8e8;
+            color: #444444;
+            font-size: 14px;
+            cursor: pointer;
+            margin-left:600px;
+        }
+        #one{
+            border: 0px solid rgb(25, 42, 0);
+            width: 25px;height: 25px;
+            background-color: #e8e8e8;
+            color: #444444;
+            display: grid;
+            align-items: center;
+            
+        }
+        /* ending of no column */
+        #map{
+            border: 0px solid red;
+            margin-top:30px;
+            width:70%;height:auto;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(4,auto);
+            gap: 70px;
+
+        }
+        #map1{
+            border: 0px solid blue;
+            
+        }
+        #map1>p:nth-child(1){
+            font-size:26px;
+            margin-top:20px;
+        }
+        #map1>p:nth-child(2){
+            font-size: 14px;
+            text-align: justify;
+            margin-top:10px;
+            color: #444444;
+        }
+        #map1>p{
+            color: #444444;
+        }
+        #map2 img{
+            width: 100%;
+        }
+        #map3{
+            display: flex;height: auto;
+            justify-content: space-between;
+            font-size: 18px;
+            color: #444444;
+            color: #4186f2;
+            margin-top:3px;
+            cursor: pointer;
+        }
+        #map0{
+            width:100%;height: auto;
+            border: 0px solid red;
+            border-radius:5px;
+            padding:10px;
+            box-shadow:rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            
+        }
+        #green{
+            border: 1px solid green;
+            background-color: #2bb673;
+            margin-top:20px;
+            
+        }
+        #green>div h4{
+            margin-bottom:10px;
+            cursor: pointer;
+            margin-top:10px;
+            
+        }
+        #green>div p{
+            font-size:12px;
+            margin-bottom:5px;
+            margin-top: 0px;
+            cursor: pointer;
+        }
+        .grn{
+            width:60%;
+            border: 0px solid green;
+            height: 310px;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(1,290px);
+            gap:10px;
+            margin: auto;
+            color: white;
+        }
+        #p{
+            width:60%;
+            text-align: center;
+            margin: auto;
+        }
+        #p p{
+            font-size: 10px;
+            color: white;
+            margin-bottom:10px;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div>
+            <img src="https://www.kindmeal.my/images/logo-kindmeal.png" alt="">
+        </div>
+
+        <div id="media">
+            <img  src="https://www.kindmeal.my/images/follow_blog_grey.png" alt="">
+            <img  src="https://www.kindmeal.my/images/follow_facebook_grey.png" alt="">
+            <img  src="https://www.kindmeal.my/images/follow_twitter_grey.png" alt="">
+        </div>
+
+        <div>
+            <table id="login">
+                <td> <p >Login</td>
+                <td><button  id="fb" onclick="LoginFB();"title="Login with Facebook Account">Facebook</button>
+                <td> <button id="em" onclick="email()">Email</button>
+                <td><p id="signup" onclick="signup()">Sign up</td>
+            </table>
+        </div>
+    <!-- starting of navbar -->
+    </div>
+    <div class="nav">
+        <table class="na">
+            <td onClick="home()">Home</td>
+            <td onClick="meal()">Meal Deals</td>
+            <td onClick="kind()">KindMoments</td>
+            <td onClick="hot()">Hot Picks</td>
+            <td onClick="recipe()">Recipes</td>
+            <td onClick="dir()">Directory</td>
+            <td onClick="art()">Articles</td>
+            <td onClick="hlp()">Help</td>
+        </table>
+    </div>
+    <div class="introbox">
+        <div class="intro">
+            <div><p style="font-size:28px;color: #444444;">Meat-Free Deals <span style="color:gray;margin-right:6px;margin-left:6px;">|</span> <span style="color:gray;font-size:24px;">Restaurants In Malaysia</span> </p></div>
+            <div>
+                <p>Browse delicious meat-free, vegetarian deals from top restaurants and cafes! Just click on "Get Free Coupon" to obtain instant discounts and dine at the restaurants.</p>
+                <p>No upfront payment, booking or printing is needed. If you share it on social media, you'll even DOUBLE your discount!</p>
+                <p style="margin-top:18px;margin-bottom:18px;">Download our <span style="color:#2184ff;cursor:pointer;">mobile app</span> now to easily get coupons and start dining in a few seconds. Effortlessly save lives, health, environment and money now!</p>
+            </div>
+            <div>
+                <input type="text" placeholder="Search Shop or Deal Name">
+                <select name="All Categories" id="location">
+                    <option value="">All Shop in Malaysia</option>
+                    <option value="">Mont kiara</option>
+                    <option value="">Ipoh</option>
+                    <option value="">kepong</option>
+                    <option value="">Ampang</option>
+                    <option value="">Cheras</option>
+                    <option value="">katis</option>
+                    <option value="">Murfis</option>
+                </select>
+                <button id="search">Search Shops</button>
+                <button id="browse">Add a Shop</button>
+            </div>
+        </div>
+    </div>
+    <div class="Btn">
+        <div>
+            <button style="background-color:#2bb673;color:#eee">Vegeterian Directory</button>
+            <button>Featured Restaurants</button>
+            <button>Food Menu</button>
+            <button>Food Map</button>
+        </div>
+    </div>
+    <!-- number row -->
+    <div class="Pno">
+        <div>Page:</div>
+        <div id="one">1</div>
+        <div style="color: #4186f2;">2</div>
+        <div style="color: #4186f2;">3</div>
+        <div style="color: #4186f2;">4</div>
+        <div style="color: #4186f2;">5</div>
+        <div style="color: #4186f2;">6</div>
+        <div style="color: #4186f2;">7</div>
+        <div style="color: #4186f2;">8</div>
+        <div style="color: #4186f2;">9</div>
+        <div id="nxt">
+            <div><button>Next »</button></div>
+        </div>
+    </div>
+    <!-- end of number col portion -->
+    <div id="map">
+        <div id="map0">
+            <div id="map1">
+                <p>AENON The Health Kitchen</p>
+                <p>AENON Health Kitchen, a hygienic restaurant that provides simple, palatable, wholesome & healthy food at affordable prices. We are dedicated in offering an extraordinary dining experience … <span style="color:#4186f2;cursor: pointer;">show more</span></p>
+                <hr>
+                <br>
+                <p style="font-size:18px;">Address</p>
+                <p>1, Jalan 4/93, Taman Miharja, Jalan Cheras, 55200 Kuala Lumpur, Wilayah Persekutuan</p>
+                <br>
+                <p style="font-size:18px;">Phone</p>
+                <p>03 - 9201 0972</p>
+                <br>
+                <p style="font-size:18px;">Opening Hours</p>
+                <p>Sun - Thu: 11am - 3pm & 6pm - 9pm; Fri - Sat: Closed</p>
+            </div>
+            <div id="map2">
+                <img src="map\1.png" alt="">
+            </div>
+            <div id="map3">
+                <div>
+                    <p>Visit Website <span style="color:gray;">|</span></p>
+                </div>
+                <div>
+                    <p>Get Directions</p>
+                </div>
+                <div>
+                    <p><span style="color:gray;">|</span>Nearby Shops</p>
+                </div>
+            </div>
+        </div>
+        <!-- 2nd -->
+        <div id="map0">
+            <div id="map1">
+                <p>Alam N-Ion</p>
+                <p>We serve delicious home-cooked vegetarian meals, crafted with the healthiest ingredients and plenty of love. We also sell natural, handmade clay and wooden Buddhist crafts, health suppleme…<span style="color:#4186f2;cursor: pointer;">show more</span></p>
+                <hr>
+                <br>
+                <p style="font-size:18px;">Address</p>
+                <p>15, Jalan 12/144A, Taman Bukit Cheras , 56000 Kuala Lumpur, Wilayah Persekutuan
+                </p>
+                <br>
+                <p style="font-size:18px;">Phone</p>
+                <p>019-275 9973</p>
+                <br>
+                <p style="font-size:18px;">Opening Hours</p>
+                <p>Fri - Wed: 9am - 4pm; Thu: Closed</p>
+            </div>
+            <div id="map2">
+                <img src="map\2.png" alt="">
+            </div>
+            <div id="map3">
+                <div>
+                    <p>Visit Website <span style="color:gray;">|</span></p>
+                </div>
+                <div>
+                    <p>Get Directions</p>
+                </div>
+                <div>
+                    <p><span style="color:gray;">|</span>Nearby Shops</p>
+                </div>
+            </div>
+        </div>
+        <!-- 3rd -->
+        <div id="map0">
+            <div id="map1">
+                <p>Annalakshmi Vegetarian Restaurant</p>
+                <hr>
+                <br>
+                <p style="font-size:18px;">Address</p>
+                <p>114-116, Jalan Berhala, Brickfields, Kuala Lumpur, 50470, Wilayah Persekutuan</p>
+                <br>
+                <p style="font-size:18px;">Phone</p>
+                <p>03 - 9201 0972</p>
+                <br>
+                <p style="font-size:18px;">Opening Hours</p>
+                <p>Sun - Thu: 11am - 3pm & 6pm - 9pm; Fri - Sat: Closed</p>
+            </div>
+            <div id="map2">
+                <img src="map\3.png" alt="">
+            </div>
+            <div id="map3">
+                <div>
+                    <p>Visit Website <span style="color:gray;">|</span></p>
+                </div>
+                <div>
+                    <p>Get Directions</p>
+                </div>
+                <div>
+                    <p><span style="color:gray;">|</span>Nearby Shops</p>
+                </div>
+            </div>
+        </div>
+        <!-- 4 -->
+        <div id="map0">
+            <div id="map1">
+                <p>Ba Xian Vegetarian Court</p>
+                
+                <hr>
+                <br>
+                <p style="font-size:18px;">Address</p>
+                <p>12,14,14-1, Persiaran Mergatua, Kepong Baru, Kuala Lumpur, 52100, Wilayah Persekutuan</p>
+                <br>
+                <p style="font-size:18px;">Phone</p>
+                <p>03 - 9201 0972</p>
+                <br>
+                <p style="font-size:18px;">Opening Hours</p>
+                <p>Daily 10am-10pm.</p>
+            </div>
+            <div id="map2">
+                <img src="map\4.png" alt="">
+            </div>
+            <div id="map3">
+                <div>
+                    <p>Visit Website <span style="color:gray;">|</span></p>
+                </div>
+                <div>
+                    <p>Get Directions</p>
+                </div>
+                <div>
+                    <p><span style="color:gray;">|</span>Nearby Shops</p>
+                </div>
+            </div>
+        </div>
+        <!-- 5 -->
+        <div id="map0">
+            <div id="map1">
+                <p>Bakti Woodlands Vegetarian Food Cafe</p>
+                <hr>
+                <br>
+                <p style="font-size:18px;">Address</p>
+                <p>55 Leboh Ampang (at near Masjid Jamek LRT station), Kuala Lumpur, 50100, Wilayah Persekutuan</p>
+                <br>
+                <p style="font-size:18px;">Phone</p>
+                <p>03-20342399</p>
+                <br>
+                <p style="font-size:18px;">Opening Hours</p>
+                <p>Sun - Thu: 11am - 3pm & 6pm - 9pm; Fri - Sat: Closed</p>
+            </div>
+            <div id="map2">
+                <img src="map\5.png" alt="">
+            </div>
+            <div id="map3">
+                <div>
+                    <p>Visit Website <span style="color:gray;">|</span></p>
+                </div>
+                <div>
+                    <p>Get Directions</p>
+                </div>
+                <div>
+                    <p><span style="color:gray;">|</span>Nearby Shops</p>
+                </div>
+            </div>
+        </div>
+        <!-- 6 -->
+        <div id="map0">
+            <div id="map1">
+                <p>Berjaya Cafe</p>
+                <p>Berjaya Cafe, the epitome for the vegetarian lovers that brings the opulence, style, and is entwined with the gastronomic taste from the best chef’s in town. With the current trend of life … <span style="color:#4186f2;cursor: pointer;">show more</span></p>
+                <hr>
+                <br>
+                <p style="font-size:18px;">Address</p>
+                <p>Level 14 West, Berjaya Times Square Hotel, No. 1, Jalan Imbi, Bukit Bintang, 55100 Kuala Lumpur, Wilayah Persekutuan </p>
+                <br>
+                <p style="font-size:18px;">Phone</p>
+                <p>56 - 9201 0972</p>
+                <br>
+                <p style="font-size:18px;">Opening Hours</p>
+                <p>Sun - Thu: 10am - 3pm & 4pm - 9pm; Fri - Sat: Closed</p>
+            </div>
+            <div id="map2">
+                <img src="map\6.png" alt="">
+            </div>
+            <div id="map3">
+                <div>
+                    <p>Visit Website <span style="color:gray;">|</span></p>
+                </div>
+                <div>
+                    <p>Get Directions</p>
+                </div>
+                <div>
+                    <p><span style="color:gray;">|</span>Nearby Shops</p>
+                </div>
+            </div>
+        </div>
+        <!-- 7 -->
+        <div id="map0">
+            <div id="map1">
+                <p>Beyond Veggie - Nexus Bangsar South Branch</p>
+                <p>
+                    A refreshing Meatless Dining Concept from Secret Recipe Cakes & Café Group. Extensive Menu range inspired by all fresh and natural products with a selection of natural products and ingredi…<span style="color:#4186f2;cursor: pointer;">show more</span></p>
+                <hr>
+                <br>
+                <p style="font-size:18px;">Address</p>
+                <p>1, Jalan 4/93, Taman Miharja, Jalan Cheras, 55200 Kuala Lumpur, Wilayah Persekutuan</p>
+                <br>
+                <p style="font-size:18px;">Phone</p>
+                <p>+603-2242 1473</p>
+                <br>
+                <p style="font-size:18px;">Opening Hours</p>
+                <p>Mon-Sun, 10am-10pm</p>
+            </div>
+            <div id="map2">
+                <img src="map\7.png" alt="">
+            </div>
+            <div id="map3">
+                <div>
+                    <p>Visit Website <span style="color:gray;">|</span></p>
+                </div>
+                <div>
+                    <p>Get Directions</p>
+                </div>
+                <div>
+                    <p><span style="color:gray;">|</span>Nearby Shops</p>
+                </div>
+            </div>
+        </div>
+        <!-- 8 -->
+        <div id="map0">
+            <div id="map1">
+                <p>Beyond Veggie - TTDI Branch</p>
+                <p>
+                    A refreshing Meatless Dining Concept from Secret Recipe Cakes & Café Group. Extensive Menu range inspired by all fresh and natural products with a selection of natural products and ingred … <span style="color:#4186f2;cursor: pointer;">show more</span></p>
+                <hr>
+                <br>
+                <p style="font-size:18px;">Address</p>
+                <p>Lot 54, Ground Floor, Jalan Tun Mohd. Fuad 1, Taman Tun Dr Ismail, 600000 Kuala Lumpur, Wilayah Persekutuan</p>
+                <br>
+                <p style="font-size:18px;">Phone</p>
+                <p>+603-7722 1142</p>
+                <br>
+                <p style="font-size:18px;">Opening Hours</p>
+                <p>Mon-Sun, 10am-10pm</p>
+            </div>
+            <div id="map2">
+                <img src="map\8.png" alt="">
+            </div>
+            <div id="map3">
+                <div>
+                    <p>Visit Website <span style="color:gray;">|</span></p>
+                </div>
+                <div>
+                    <p>Get Directions</p>
+                </div>
+                <div>
+                    <p><span style="color:gray;">|</span>Nearby Shops</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- number row -->
+    <div class="Pno">
+        <div>Page:</div>
+        <div id="one">1</div>
+        <div style="color: #4186f2;">2</div>
+        <div style="color: #4186f2;">3</div>
+        <div style="color: #4186f2;">4</div>
+        <div style="color: #4186f2;">5</div>
+        <div style="color: #4186f2;">6</div>
+        <div style="color: #4186f2;">7</div>
+        <div style="color: #4186f2;">8</div>
+        <div style="color: #4186f2;">9</div>
+        <div id="nxt">
+            <div><button>Next »</button></div>
+        </div>
+    </div>
+    <!-- end of number col portion -->
+     <!-- end of number col portion -->
+     <div id="green">
+        <div class="grn">
+            <div>
+                <h4 >General</h4>
+                <p>Home</p>
+                <p>Sign Up</p>
+                <p>Businesses / Restaurateurs</p>
+                <p>Advertising</p>
+                <p>About KindMeal.my</p>
+                <p>Help & FAQ</p>
+                <p>Terms & Conditions</p>
+                <p>Inspiring Partners</p>
+                <p>Lifestyle Ambassadors</p>
+                <p>Jobs & Careers</p>
+                <p>Contact Us</p>
+            </div>
+        
+            <div>
+                <h4>Features</h4>
+                <p>Meat-Free Deals</p>
+                <p>Tasty Menus</p>
+                <p>Kind Moments</p>
+                <p>Meat-Free Recipes</p>
+                <p>Member Recommendations</p>
+                <p>Featured Restaurants</p>
+                <p>Vegetarian & Vegan Directory</p>
+                <p>Food Map</p>
+                <p>Become A Superhero</p>
+                <p>Vegan News & Vegetarian Articles</p>
+                <p>Latest Comments</p>
+            </div>
+        
+            <div><h4>Social Media</h4>
+                <p>KindMeal Widget</p>
+                <p>Facebook</p>
+                <p>Twitter</p>
+                <p>Instagram</p>
+            </div>
+        
+            <div>
+                <h4>Mobile</h4>
+                <p>iPhone & iPod App</p>
+                <p> Android App</p>
+                <p> </p>
+                <h4>Exciting Promos</h4>
+                <p>Gadhimai: Ending Mass Slaughter</p>
+                <p>Free Meals</p>
+                <p>Food Bloggers</p>
+                <p>Uber CHIRP</p>
+                <p>Jane Goodall Contest</p>
+                <p> Win Digi iPhone 6</p>
+                <p>Feed The Poor</p>
+                <p>Win Superhero Gifts</p>
+                <p>Win an iPad Mini 3</p>
+            </div>
+        
+            <div>
+                <h4>PetFinder.my</h4>
+                <p>Adopt A Pet</p>
+                <p>Smartphone Apps</p>
+                <p>WAGazine</p>
+                <p>Discussion Forum</p>
+                <p>Medical Fund</p>
+            </div>
+        </div>
+        <div id="p">
+            <p> Copyright © KindMeal.my, 2014 - 2022. All rights reserved.</p>
+            <p>This website promotes compassionate, meat-free dining experience. Some food may contain eggs, dairy products or alcohol, please view individual listings for details.</p> 
+     </div>
+    
+</body>
+<script>
+    function LoginFB(){
+        document.location.href="https://www.facebook.com/login.php?skip_api_login=1&api_key=292733157519852&kid_directed_site=0&app_id=292733157519852&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv2.9%2Fdialog%2Foauth%3Fclient_id%3D292733157519852%26redirect_uri%3Dhttps%253A%252F%252Fwww.kindmeal.my%252Flogin.php%253Faction%253Dfacebook%26state%3Da20fd889828c43e49d9cb9572ee509de%26display%3Dpopup%26scope%3Demail%252Cuser_birthday%252Cuser_location%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D093ae1bb-7c73-4185-9c66-d2d5fa050cf8%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.kindmeal.my%2Flogin.php%3Faction%3Dfacebook%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3Da20fd889828c43e49d9cb9572ee509de%23_%3D_&display=popup&locale=en_GB&pl_dbl=0"
+    }
+    function email(){
+        document.location.href="https://www.google.com/intl/en_in/gmail/about/"
+    }
+    function signup(){
+        document.location.href="signup.html"
+    }
+    function home(){
+        document.location.href="index.html"
+    }
+    function meal(){
+        document.location.href="meal.html"
+    }
+    function art(){
+        document.location.href=""
+    }
+    function hlp(){
+        document.location.href=""
+    }
+    function dir(){
+        document.location.href=""
+    }
+    function hot(){
+        document.location.href="https://www.kindmeal.my/hotpicks.htm"
+    }
+    function recipe(){
+        document.location.href="recipes.html"
+    }
+    function kind(){
+        document.location.href=""
+    }
+</script>
+</html>

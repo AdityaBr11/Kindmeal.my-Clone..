@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{
+            font-family: Roboto, Arial, Helvetica, sans-serif;
+            border: 0px;
+            margin: 0px;
+            padding: 0px;
+            
+            
+        }
+           /* head and body of navbar */
+           /* start */
+        .head{
+            width:80%;
+            border: 0px solid black;
+            height: 90px;
+            display: flex;
+            justify-content: space-around;
+            margin: auto;
+        }
+        #media{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            cursor: pointer;
+        }
+        #media>img{
+            height:40px;margin-top:25px;margin-right:10px;
+
+        }
+        #login{
+            border: 0px solid black;
+            margin-top:18px;
+            justify-content: space-between;
+            width:280px;
+            font-family:Arial, Helvetica, sans-serif;
+            cursor: pointer;
+            
+        }
+        #login td>p{
+            border: 0px solid red;
+
+            font-size: 13px;
+            cursor: pointer;
+        }
+        #fb{
+            width: 80px;
+            height: 25px;
+            line-height: 20px;
+            padding: 2px 2px 2px 2px;
+            background-color: #35619f;
+            font-weight: bold;
+            font-size: 13px;
+            text-align: center;
+            border-radius: 5px;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+        }
+        #em{
+            width: 80px;
+            height: 26px;
+            line-height: 20px;
+            padding: 2px 2px 2px 2px;
+            background-color: #666666;
+            font-weight: bold;
+            font-size: 13px;
+            text-align: center;
+            border-radius: 5px;
+            border: none;
+            color: white;
+        }
+        .nav{
+            display: flex;
+            border: 0px solid blue;
+            height: 43px;
+            background-color: #2bb673;
+            width:auto;
+            margin-left:-10px;
+        }
+        .na{
+           border: 0px solid red;
+           width: 70%;
+           margin: auto;
+           font-size:18px;
+           line-height: 40px;
+           font-weight:7px;
+           font-family: Roboto, Arial, Helvetica, sans-serif;
+           color: white;
+           cursor: pointer;
+        }
+        .na td{
+            border: 0px solid black;
+            text-align: center;
+        }
+        .na td:hover{
+            border: 0px solid black;
+            background-color: #229760;
+        }
+        /* end of navbar */
+        .body{
+            border: 0px solid red;
+            width: 71%;
+            height: 350px;
+            margin: auto;
+        }
+        /* body trans */
+        /* staring of body transition portion */
+        .trans{
+            /* width: 100px;
+            height:100vh; */
+            display: grid;
+            place-items: center;
+            margin-top:-90px;
+        }
+        .box{
+            width:70%;
+            height: 350px;
+            margin-top: 90px;
+            background-image: url("https://www.linkpicture.com/q/img1_23.png");
+            background-size: 100% 100%;
+            animation: changeImage 25s linear infinite;
+            
+        }
+        @keyframes changeImage{
+            10%{
+                background-image: url('https://www.linkpicture.com/q/img2_19.png');
+            }
+            20%{
+                background-image: url('https://www.linkpicture.com/q/img4_14.png');
+            }
+            30%{
+                background-image: url('https://www.linkpicture.com/q/img3_16.png');
+            }
+            40%{
+                background-image: url('https://www.linkpicture.com/q/img5_9.png');
+            }
+            50%{
+                background-image: url('https://www.linkpicture.com/q/img6_8.png');
+            }
+            60%{
+                background-image: url('https://www.linkpicture.com/q/img7_7.png');
+            }
+            70%{
+                background-image: url('https://www.linkpicture.com/q/img8_5.png');
+            }
+            80%{
+                background-image: url('https://www.linkpicture.com/q/img9_6.png');
+            }
+            90%{
+                background-image: url('https://www.linkpicture.com/q/img10_5.png');
+            }
+
+        }
+        .belowb{
+            width:69%;
+            display: grid;
+            grid-template-columns: repeat(7,1fr);
+            gap: 15px;
+            padding:10px;
+            box-shadow: 0px 0px 6px #e0e0e0;
+        }
+        .belowb>div img{
+            width:90%;
+            padding: 10px;
+
+        }
+        /* end of body transition portion */
+        .news{
+            width: 68%;
+            margin: auto;
+            box-shadow:rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            margin-top: 30px;
+            padding:6px 15px 5px 15px;
+            background-color: white;
+
+        }
+        .newstxt{
+            display: flex;
+        }
+        .newstxt>h2{
+            margin-bottom: 5px;
+            color: #666666;
+            
+        }
+        .newslnk{
+            display: flex;
+            margin: auto;
+            font-size: 20px;
+            margin-right:20px;
+            margin-bottom:-15px;
+            
+        }
+        .newslnk>a{
+            margin-right:20px;
+            text-decoration: none;
+            color: #566cc5;
+        }
+        .newsimg{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            gap:15px;
+
+        }
+        .newsimg img{
+            width:100%;
+            height: 200px;
+            border-radius:3px;
+        }
+        .newsimg p{
+            text-align: center;
+            font-size: 13px;
+            color: #666666;
+        }
+        .h4{
+            text-align: center;
+            margin-bottom:-7px;
+            margin-top: 0px;
+        }
+        .h4 >a{
+            font-size:15px;
+            color: gray;
+            text-decoration: none;
+        }
+        #sign{ 
+            border: 0px solid black;
+            background-color: white;
+            width: 40%;
+            height:600px;
+            border-radius: 10px;
+            position:fixed; 
+            top: 10%;
+            left: 30%;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+        #sign>a>p{
+            width:10%;
+            border: 0px solid red;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 93%;
+            font-size: 20px;
+            color: #cccccc;
+            margin-top: 8px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .tp{
+            width:70%;height: auto;
+            border:0px solid blue;
+            margin: auto;
+            text-align: center;
+        }
+        .tp>img{
+            width: 100%;
+            margin-top:-90px;
+        }
+        .tp>p,h3{
+            margin-top:-8px;
+            color: #666666;
+        }
+        .mid{
+            border: 0px solid black;
+            display: flex;
+            margin-top:30px;
+            margin-left:14px;
+            margin-right:14px;
+            text-align: justify;
+            cursor: pointer;
+            border-radius:6px;
+            box-shadow:rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            
+        }
+        .mid>img{
+            border: 0px solid red;
+            width:35%;padding: 5px;
+        }
+        .mid>div{
+            border: 0px solid green;
+            margin-top:10px;
+            margin-left:5px;
+            margin-right:5px;
+            color: #666666;
+        }
+        .mid1{
+            border: 0px solid black;
+            display: flex;
+            margin-top:30px;
+            margin-left:14px;
+            margin-right:14px;
+            text-align: justify;
+            cursor: pointer;
+            border-radius:6px;
+            box-shadow:rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            
+        }
+        .mid1>img{
+            border: 0px solid red;
+            width:35%;padding: 5px;
+        }
+        .mid1>div{
+            border: 0px solid green;
+            margin-top:10px;
+            margin-left:5px;
+            margin-right:5px;
+            color: #666666;
+        }
+        .btw{
+            display: flex;
+            justify-content: space-between;
+            margin-left:9px;
+            margin-right:9px;
+            cursor: pointer;
+            color: #666666;
+        }
+    </style>
+</head>
+<body>
+     <!-- starting of navhead -->
+     <div class="head">
+        <div>
+            <img src="https://www.kindmeal.my/images/logo-kindmeal.png" alt="">
+        </div>
+
+        <div id="media">
+            <img  src="https://www.kindmeal.my/images/follow_blog_grey.png" alt="">
+            <img  src="https://www.kindmeal.my/images/follow_facebook_grey.png" alt="">
+            <img  src="https://www.kindmeal.my/images/follow_twitter_grey.png" alt="">
+        </div>
+
+        <div>
+            <table id="login">
+                <td> <p >Login</td>
+                <td><button  id="fb" onclick="LoginFB();"title="Login with Facebook Account">Facebook</button>
+                <td> <button id="em" onclick="email()">Email</button>
+                <td><p id="signup" onclick="signup()">Sign up</td>
+            </table>
+        </div>
+    <!-- starting of navbar -->
+    </div>
+    <div class="nav">
+        <table class="na">
+            <td onClick="home()">Home</td>
+            <td onClick="meal()">Meal Deals</td>
+            <td onClick="kind()">KindMoments</td>
+            <td onClick="hot()">Hot Picks</td>
+            <td onClick="recipe()">Recipes</td>
+            <td onClick="dir()">Directory</td>
+            <td onClick="art()">Articles</td>
+            <td onClick="hlp()">Help</td>
+        </table>
+    </div>
+    <!-- end of navbar -->
+
+    <!-- staring of body transition portion -->
+    <div class="trans">
+        <div class="box">
+        </div>
+        <div class="belowb">
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/7/718-5090-m.jpg" alt="">
+            </div>
+    
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/7/717-5054-m.jpg" alt="">
+            </div>
+    
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/6/684-4446-m.jpg" alt="">
+            </div>
+    
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/7/709-4950-m.jpg" alt="">
+            </div>
+    
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/7/703-4854-m.jpg" alt="">
+            </div>
+    
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/6/666-4145-m.jpg" alt="">
+            </div>
+    
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/2/271-519-m.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- end of body transition portion -->
+    <!-- body 1st -->
+    <div class="news">
+        <div class="newstxt">
+            <h2>Latest News & Videos</h2>
+            <div class="newslnk">
+                <a href="https://www.kindmeal.my/widget.htm" class="blue" xtarget="_blank">Save Lives with Your Blog</a> 
+                <p id="dot">. </p>
+                <a href="" class="blue" xtarget="_blank"> News &amp; Articles</a>
+                <p id="dot">. </p>
+                <a href="https://www.facebook.com/KindMeal.my" class="blue" target="_blank">  Follow Our Facebook</a>
+            </div>
+        </div>
+
+       <div class="newsimg">
+        <div>
+            <img src="https://scontent-sin6-1.xx.fbcdn.net/v/t15.5256-10/298275514_1793992247612870_4102622818283493322_n.jpg?stp=dst-jpg_s720x720&_nc_cat=107&ccb=1-7&_nc_sid=ad6a45&_nc_ohc=_9L2M1Yf05EAX_rJxTb&_nc_ht=scontent-sin6-1.xx&edm=ALdPpPkEAAAA&oh=00_AT_XoQfpsGixTqsoL8dQUGlyZYGpWVTQxWvlUK_USREQhQ&oe=630B7A82" alt="">
+            <p>The Top 7 Smartest Animals</p>
+        </div>
+
+        <div>
+            <img src="https://scontent-xsp1-2.xx.fbcdn.net/v/t15.5256-10/21707660_1430313403713822_4780572855584686080_n.jpg?stp=dst-jpg_p720x720&_nc_cat=111&ccb=1-7&_nc_sid=ad6a45&_nc_ohc=RcBoqAsP5BcAX8IlQCB&_nc_ht=scontent-xsp1-2.xx&edm=ALdPpPkEAAAA&oh=00_AT_LOJ7X7YEtClZI7i3X-WESp5ibUVI3xFdJhQZU6V8Whw&oe=6309CC86" alt="">
+            <p>Creamy Hasselback Potatoes</p>
+        </div>
+
+        <div>
+            <img src="https://scontent-xsp1-2.xx.fbcdn.net/v/t15.5256-10/297490495_5300872103341148_4812180245387187070_n.jpg?stp=dst-jpg_p720x720&_nc_cat=110&ccb=1-7&_nc_sid=ad6a45&_nc_ohc=VfNjjhciLoUAX86UY6i&_nc_ht=scontent-xsp1-2.xx&edm=ALdPpPkEAAAA&oh=00_AT_94X3phrFwoZcVtuVJx8JOA5xlZVuD3uJWn4f_pWQ5DQ&oe=630A5A29" alt="">
+            <p>Busy Beaver Delivers Lettuce To Zoo Friends</p>
+        </div>
+
+        <div>
+            <img src="https://scontent-xsp1-2.xx.fbcdn.net/v/t15.5256-10/297116651_384596210475584_5376654219115704349_n.jpg?stp=dst-jpg_s720x720&_nc_cat=107&ccb=1-7&_nc_sid=ad6a45&_nc_ohc=ggyHZY5ZmbAAX9m9siT&_nc_ht=scontent-xsp1-2.xx&edm=ALdPpPkEAAAA&oh=00_AT99xiTg8YzeBqf46RsQHC0NA2_1kassyQprwpAGzzIIjw&oe=630B021C" alt="">
+            <p>Teaching My Pet Pig To Talk 🐷</p>
+        </div>
+
+        <div>
+            <img src="https://scontent-xsp1-2.xx.fbcdn.net/v/t15.5256-10/297287041_759478638588669_7244009508553843157_n.jpg?stp=dst-jpg_p720x720&_nc_cat=109&ccb=1-7&_nc_sid=ad6a45&_nc_ohc=RDmX5SwUhPkAX-8LWo3&_nc_ht=scontent-xsp1-2.xx&edm=ALdPpPkEAAAA&oh=00_AT8_kprBO8Hi6gN8WsrjERfTdpocasGbKCJdDUzBYPrf1Q&oe=630A3112" alt="">
+            <p>Hatching Animals 🐣</p>
+        </div>
+       </div>
+    </div>
+    <body>
+        <div id="sign">
+            <a href="index.html">
+                <p class="mark">✖</p><br>
+            </a>
+            <div class="tp">
+                <img src="https://www.kindmeal.my/images/logo-kindmeal.png" alt="">
+                <h3>Join KindMeal For FREE Now</h3>
+                <p>Please select the type of membership to proceed</p>
+            </div>
+            <div class="mid" onClick="Rsignup()">
+                <img src="https://www.kindmeal.my/images/join_normal.png" alt="">
+                <div>
+                    <h3>Food Lover</h3>
+                    <p>Join FREE to enjoy yummy deals, share reviews & meet our community of compassionate food lovers.</p>
+                </div>
+            </div>
+            <div class="mid1" onClick="Not()">
+                <img src="https://www.kindmeal.my/images/join_shop.png" alt="">
+                <div>
+                    <h3>Restaurant/Shop Owner</h3>
+                    <p>List your food outlet, create exciting vegetarian deals & showcase your delicious menu for FREE. Enjoy our yummy deals, share reviews & meet food lovers too.</p>
+                </div>
+            </div>
+            <div class="btw">
+                <p onClick="Rlogin()">Member Login</p>
+                <div>
+                    <p>Forgot Password?</p>
+                </div>
+            </div>
+          </div>
+</body>
+<script>
+    function Rsignup(){
+        window.location.href="signup.html"
+    }
+    function Rlogin(){
+        window.location.href="login.html"
+    }
+    function Not(){
+        alert("Sorry This features is not available")
+    }
+</script>
+</html>

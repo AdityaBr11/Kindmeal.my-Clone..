@@ -4,22 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🍎Delicious Meat-Free Meals,Vegitiarian cuisanis</title>
+    <title>Document</title>
     <style>
         *{
-            margin: 0px;
-            padding: 0px;
+            margin: 0px;padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
         .head{
             width:80%;
-            height:80px;
+            border: 0px solid black;
+            height: 90px;
+            display: flex;
+            justify-content: space-around;
+            margin: auto;
+
+
         }
-        .head img{
-            width: 30%;
-            display: block;
-            margin-left:45%;
+        #media{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            cursor: pointer;
         }
-        
+        #media>img{
+            height:40px;margin-top:25px;margin-right:10px;
+
+        }
+        #login{
+            border: 0px solid black;
+            margin-top:16px;
+            justify-content: space-between;
+            width:280px;
+            font-family:Arial, Helvetica, sans-serif;
+            cursor: pointer;
+            
+        }
+        #login td>p{
+            border: 0px solid red;
+
+            font-size: 13px;
+            cursor: pointer;
+        }
+        #fb{
+            width: 80px;
+            margin-top:20px;
+            height: 25px;
+            line-height: 20px;
+            padding: 2px 2px 2px 2px;
+            background-color: #35619f;
+            font-weight: bold;
+            font-size: 13px;
+            text-align: center;
+            border-radius: 5px;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+        }
+        #em{
+            width: 80px;
+            height: 26px;
+            line-height: 20px;
+            padding: 2px 2px 2px 2px;
+            background-color: #666666;
+            font-weight: bold;margin-top:20px;
+            font-size: 13px;
+            text-align: center;
+            border-radius: 5px;
+            border: none;
+            color: white;
+        }
         .nav{
             display: flex;
             border: 0px solid blue;
@@ -32,120 +84,139 @@
            border: 0px solid red;
            width: 70%;
            margin: auto;
-           font-size:18px;
+           font-size:1.2vw;
            line-height: 40px;
            font-weight:7px;
            font-family: Roboto, Arial, Helvetica, sans-serif;
            color: white;
            cursor: pointer;
         }
-        /* end of navbar */
-        .create{
-            border: 2px solid rgb(255, 255, 255);
-            width: 35%;
-            height: auto;
-            margin: auto;
-            margin-top:20px;
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            margin-bottom: 30px;
+        .na td{
+            border: 0px solid black;
+            text-align: center;
         }
-        input{
-            width:87%;
-            height: 38px;
+        .na td:hover{
+            border: 0px solid black;
+            background-color: #229760;
+        }
+        /* end of navbar */
+        /* signup part */
+        #Pdiv{
+            border: 0px solid black;
+            width:70%;
+            margin: auto;
+            display: flex;
+        }
+        #image{
+            border: 0px solid red;
+            width:25%;height:auto;
+            text-align: center;
+            text-align: justify;
+            color: #808080 ;
+            
+        }
+        #image>div img{
             margin-left:30px;
+            width:80%;
+            margin-bottom:8px;
+        }
+        #image>div{
+            border: 0px solid green;
+            margin-top:20px;
+            padding:13px 10px 13px 24px;
+            border-radius:6px;
+            width:95%;
+            box-shadow:rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        }
+        #image>div p{
+            text-align: center;
+            font-size: 14px;
+        }
+        #info{
+            width:80%;
+            border: 0px solid black;
+            margin-left:20px;
+            padding: 40px;
+        }
+        #info p{
+            margin-top:15px;
+            margin-bottom:30px;
+        }
+        
+        input{
+            width:50%;
+            height: 38px;
             margin-bottom:20px;
             padding:6px 5px;
             border-radius:5px;
-            margin-top:6px;
-            /* border-width: .1px; */
-            /* border-color:grey; */
             font-family: Arial, Helvetica, sans-serif;
             font-size: 15px;
             padding:0px 0px 0px 9px;
             border: solid 3px #eee;
-
-        }
-        label{
-            height: 40px;
-            margin-left:30px;
-            margin-bottom:15px;
-            margin-bottom:30px;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size:16px;
-            color: rgb(72, 70, 70);
-
-        }
-        h2{
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: bold;
-            margin-top: 40px;
-            color: #2bb673;
         }
         button{
-            width:88%;
+            width:20%;
             height: 40px;
             display: block;
-            margin: auto;
             border-radius: 5px;
             font-weight: bold;
-            border-color:grey;
+            border-color:grey;color: white;
             border: none;
-            background-color: rgb(177, 175, 175);
+            background-color: #f53838;
             cursor: pointer;
+            margin-bottom:20px;
         }
         button:hover{
-            background-color: #2bb673;
-            color:white ;
-            
+            background-color: #d22929;
         }
-        #b{
-            font-family: Arial, Helvetica, sans-serif;
-            color: rgb(39, 39, 158);
+        #blue{
+            color: #2184ff;
+            text-decoration: none;
             cursor: pointer;
         }
-        h3{
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
-            font-size:16px;
-            margin-top:55px;
-            color: gray;
-            font-weight: lighter;
-            margin-bottom: 20px;
-        }
-        img{
-            width:20%;
-            display: block;
+        .banner{
+            width:100%;
             margin: auto;
-            margin-top:20px;
-            border-radius:16px;
+            border: 0px solid black;
+            margin-top:90px;
+            background-color: #e0e0e0;
+            height:auto;
+            padding-top:2%;
         }
-        /* bootom */
+        .banner>div{
+            border: 0px solid blue;
+            width: 70%;
+            margin: auto;
+            
+        }
+        .banner>div>img{
+            width:100%;
+            margin-top:23px;
+        }
         #green{
-            border: 0px solid green;
+            border: 1px solid green;
             background-color: #2bb673;
-            font-family: Roboto, Arial, Helvetica, sans-serif;
             
         }
         #green>div h4{
             margin-bottom:10px;
             cursor: pointer;
-            margin-top:15px;
-            
+            margin-top:10px;
             
         }
         #green>div p{
             font-size:12px;
+            margin-bottom:5px;
+            margin-top: 0px;
             cursor: pointer;
-            margin-bottom:4px;
         }
         .grn{
-            width:70%;
+            width:60%;
             border: 0px solid green;
-            height: autopx;
+            height: 310px;
             display: grid;
             grid-template-columns: repeat(5,1fr);
-            grid-template-rows: repeat(1,280px);
+            grid-template-rows: repeat(1,290px);
             gap:10px;
             margin: auto;
             color: white;
@@ -158,11 +229,10 @@
         #p p{
             font-size: 10px;
             color: white;
+            margin-bottom:10px;
 
-        }
-        
-       
-      
+        }  
+
     </style>
 </head>
 <body>
@@ -170,39 +240,90 @@
         <div>
             <img src="https://www.kindmeal.my/images/logo-kindmeal.png" alt="">
         </div>
+
+        <div id="media">
+            <img  src="https://www.kindmeal.my/images/follow_blog_grey.png" alt="">
+            <img  src="https://www.kindmeal.my/images/follow_facebook_grey.png" alt="">
+            <img  src="https://www.kindmeal.my/images/follow_twitter_grey.png" alt="">
+        </div>
+
+        <div>
+            <table id="login">
+                <td> <p >Login</td>
+                <td><button  id="fb" onclick="LoginFB();"title="Login with Facebook Account">Facebook</button>
+                <td> <button id="em" onclick="email()">Email</button>
+                <td><p id="signup" onclick="signup()">Sign up</td>
+            </table>
+        </div>
     <!-- starting of navbar -->
     </div>
     <div class="nav">
         <table class="na">
-            <td>Home</td>
-            <td>Meal Deals</td>
-            <td>KindMoments</td>
-            <td>Hot Picks</td>
-            <td>Recipes</td>
-            <td>Directory</td>
-            <td>Articles</td>
-            <td>Help</td>
+            <td onClick="home()">Home</td>
+            <td onClick="meal()">Meal Deals</td>
+            <td onClick="kind()">KindMoments</td>
+            <td onClick="hot()">Hot Picks</td>
+            <td onClick="recipe()">Recipes</td>
+            <td onClick="dir()">Directory</td>
+            <td onClick="art()">Articles</td>
+            <td onClick="hlp()">Help</td>
         </table>
     </div>
-    <!-- end of navbar -->
+    <div id="Pdiv">
+        <div id="image">
+            <div>
+                <img src="https://www.kindmeal.my/images/join_normal.png" alt="">
+                <p>Food Lover Sign Up</p>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/images/join_shop.png" alt="">
+                <p>Restaurent Sign Up</p>
+            </div>
+            <div>
+                <p id="pbig" style="font-size:24px;margin-right:20px;margin-bottom:6px;color: black;">Why KindMeal?</p>
+                <ul>
+                    <li>Exclusive meat-free deals</li>
+                    <li>Share yummy food moments</li>
+                    <li>Meet friendly food lovers</li>
+                    <li>Discover cool restaurants</li>
+                    <li>Email updates on tasty deals</li>
+                    <li>Instant coupons & dining</li>
+                    <li>No upfront payment, booking or printing</li>
+                </ul>
+                <p> <a href="">More about KindMeal »</a> </p>
+            </div>
+    
+        </div>
+        <div id="info">
+            <p style="font-size:26px;">Food Lover? Sign Up Now or <span><a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=292733157519852&kid_directed_site=0&app_id=292733157519852&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv2.9%2Fdialog%2Foauth%3Fclient_id%3D292733157519852%26redirect_uri%3Dhttps%253A%252F%252Fwww.kindmeal.my%252Flogin.php%253Faction%253Dfacebook%26state%3Dcb7817e858189bb6e9671c09fcb86975%26display%3Dpopup%26scope%3Demail%252Cuser_birthday%252Cuser_location%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D002d22a3-6410-4cae-9617-0ac68d6822ab%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.kindmeal.my%2Flogin.php%3Faction%3Dfacebook%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3Dcb7817e858189bb6e9671c09fcb86975%23_%3D_&display=popup&locale=en_GB&pl_dbl=0" id="blue">Login With Facebook</a></span></p>
+            <p>Discover tasty meat-free meals and dine instantly — no coupon payment, booking or printing is required.</p>
+            
+            <p>KindMeal is a fun, exciting and cool new way for you to show your compassion towards animals. We collaborate with kind restaurants and cafes across the nation to bring you delicious meat-free foods that will not only help save precious animal lives, but improve your health and save your money at the same time!
+            </p>
+            <form>
+                <label for="">Your Name</label><br>
+                <input id="name" type="text"><br>
+                <label for="">Email </label><br>
+                <input id="mail" type="email" placeholder=""><br>
+                <label for="">Mobile Number</label><br>
+                <input id="mob" type="number" placeholder=""><br>
+                <label for="password">Password</label><br>
+                <input type="password" name="password" id="password" placeholder="" /><br>
+                <label for="">Birth Date</label><br>
+                <input id="dob" type="date"><br>
+    
+                <button onClick="sign()" type="submit">Join Now</button>
 
-    <img src="https://d2skenm2jauoc1.cloudfront.net/assets/restaurant-website-builder/img/pages/why-food-photography-is-important/why-food-photography-is-important-for-restaurants-66727ced1d.png" alt="">
-    <div class="create">
-        <h2>Sign Up</h2>
-        <form>
-            <label for="">Email</label><br>
-            <input id="mail" type="email" placeholder="Enter email"><br>
-            <label for="">Mobile Number</label><br>
-            <input id="mob" type="number" placeholder="Enter your Number"><br>
-            <label for="password">Password</label><br>
-            <input type="password" name="password" id="password" placeholder="Enter password" /><br>
-
-            <button onClick="signup()" type="submit">SIGN UP</button>
-            <h3>Already have an account?
-                <a href="login.html" <span id="b">Login</span></h3></a>
-        
-
-        </form>
+                <h3 style="color:gray;">Already have an account?
+                    <a href="login.html"<span style="color:#94b3f9;">Login</span></h3></a>
+            
+            </form>
+        </div>
+    </div>
+    <div class="banner">
+        <div>
+            <img src="https://www.kindmeal.my/images/how_kindmeal_works.png" alt="">
+        </div>
     </div>
     <div id="green">
         <div class="grn">
@@ -269,34 +390,69 @@
                 <p>Medical Fund</p>
             </div>
         </div>
-         <!-- <div id="p">
+        <div id="p">
             <p> Copyright © KindMeal.my, 2014 - 2022. All rights reserved.</p>
-            <p>This website promotes compassionate, meat-free dining experience. Some food may contain eggs, dairy products or alcohol, please view individual listings for details.</p>  -->
+            <p>This website promotes compassionate, meat-free dining experience. Some food may contain eggs, dairy products or alcohol, please view individual listings for details.</p> 
      </div>
-        
 </body>
-</html>
 <script> 
-    function signup(){
+    function sign(){
         event.preventDefault()
+        let name=document.getElementById("name").value;
         let email=document.getElementById("mail").value;
         let mobile=document.getElementById("mob").value;
         let password=document.getElementById("password").value;
+        let dob=document.getElementById("dob").value;
         let user={
+            name:name,
             email:email,
             mobile:mobile,
-            password:password
+            password:password,
+            dob:dob
         }
         localStorage.setItem("user",JSON.stringify(user))
         // console.log(localStorage.getItem("user"));
-        if(email==""||mobile==""||password==""){
+        if(name==""||email==""||mobile==""||password==""||dob==""){
             alert("Some field is blank")
         }else{
             alert("Sign up successful now you can login")
-        }
-        
-        
+        } 
     }
-
-
+    function btn(){
+        document.location.href="signup.html"
+    }
+    function LoginFB(){
+        document.location.href="https://www.facebook.com/login.php?skip_api_login=1&api_key=292733157519852&kid_directed_site=0&app_id=292733157519852&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv2.9%2Fdialog%2Foauth%3Fclient_id%3D292733157519852%26redirect_uri%3Dhttps%253A%252F%252Fwww.kindmeal.my%252Flogin.php%253Faction%253Dfacebook%26state%3Da20fd889828c43e49d9cb9572ee509de%26display%3Dpopup%26scope%3Demail%252Cuser_birthday%252Cuser_location%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D093ae1bb-7c73-4185-9c66-d2d5fa050cf8%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.kindmeal.my%2Flogin.php%3Faction%3Dfacebook%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3Da20fd889828c43e49d9cb9572ee509de%23_%3D_&display=popup&locale=en_GB&pl_dbl=0"
+    }
+    function email(){
+        document.location.href="https://www.google.com/intl/en_in/gmail/about/"
+    }
+    function signup(){
+        alert("oops! You are already at signup page")
+    }
+    function home(){
+        document.location.href="index.html"
+    }
+    function meal(){
+        document.location.href="meal.html"
+    }
+    function art(){
+        document.location.href="https://www.kindmeal.my/articles/"
+    }
+    function hlp(){
+        document.location.href="https://www.kindmeal.my/help.htm"
+    }
+    function dire(){
+        document.location.href="directory.html"
+    }
+    function hot(){
+        document.location.href="https://www.kindmeal.my/hotpicks.htm"
+    }
+    function recipe(){
+        document.location.href="recipes.html"
+    }
+    function kind(){
+        document.location.href=""
+    }
 </script>
+</html>

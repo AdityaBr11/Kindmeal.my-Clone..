@@ -89,7 +89,7 @@
            border: 0px solid red;
            width: 70%;
            margin: auto;
-           font-size:18px;
+           font-size:1.2vw;
            line-height: 40px;
            font-weight:7px;
            font-family: Roboto, Arial, Helvetica, sans-serif;
@@ -107,7 +107,8 @@
         /* end of nav */
         .up0{
             border: 0px solid blue;
-            height:205px;
+            height:auto;
+            padding-bottom:2%;
             background-color: #f0f0f0 ;
         }
         #up{
@@ -155,7 +156,7 @@
        
       }
       input{
-        width:350px;height:33px;
+        width:35%;height:33px;
         font-size: 16px; border-radius:5px;
         padding:0px 0px 0px 5px;
         border-color: #444444;
@@ -163,14 +164,14 @@
         cursor: pointer;
       }
       #select{
-        width:166px;height:35px;
+        width:14%;height:35px;
         font-size:16px;color: #666666;
         padding-right:5px;padding-left:5px; border-radius:5px;
         cursor: pointer;
 
       }
       #search{
-        width:180px;height:35px;
+        width:15%;height:35px;
         background-color: #f53838;
         border: none;font-weight: bold;border-radius:6px;
         font-size: 16px;color: white;
@@ -194,10 +195,9 @@
         margin-top:50px;
       }
       .childbotton>button{
-        
-        width:140px;height:30px;
-        border-radius:5px;font-size:14px;
-        margin-right:35px;
+        width:13%;height:30px;
+        border-radius:5px;font-size:1vw;
+        margin-right:3%;
         margin-top:15px;
         border: 2px solid #ececec;
         color: #444444;
@@ -259,7 +259,7 @@
             width: 70%;
             margin: auto;
             display: grid;
-            grid-template-columns: repeat(3,1fr);
+            grid-template-columns: repeat(3,33%);
             grid-template-rows: auto;
             gap:20px;margin-top:20px;
         }
@@ -283,11 +283,11 @@
             padding:5px;
         }
         #tp>p{
-            margin-left:-50px;
+            margin-left:-24%;
             color: #828282 ;
         }
         #tp>button{
-            width: 70px;height:30px;
+            width: 18%;height:30px;
             background-color: #f53838;
             color: white;font-size: 14px;border-radius: 6px;
             margin-top:6px;
@@ -441,7 +441,7 @@
             <td onClick="kind()">KindMoments</td>
             <td onClick="hot()">Hot Picks</td>
             <td onClick="recipe()">Recipes</td>
-            <td onClick="dir()">Directory</td>
+            <td onClick="dire()">Directory</td>
             <td onClick="art()">Articles</td>
             <td onClick="hlp()">Help</td>
         </table>
@@ -1016,8 +1016,8 @@
     function hlp(){
         document.location.href=""
     }
-    function dir(){
-        document.location.href=""
+    function dire(){
+        document.location.href="directory.html"
     }
     function hot(){
         document.location.href="https://www.kindmeal.my/hotpicks.htm"

@@ -11,6 +11,7 @@
             margin: 0px;
             font-family: Roboto, Arial, Helvetica, sans-serif;
         }
+      
         .head{
             width:80%;
             border: 0px solid black;
@@ -84,7 +85,7 @@
            border: 0px solid red;
            width: 70%;
            margin: auto;
-           font-size:18px;
+           font-size:1.2vw;
            line-height: 40px;
            font-weight:7px;
            font-family: Roboto, Arial, Helvetica, sans-serif;
@@ -109,7 +110,8 @@
             border: 0px solid red;
             width:70%;
             margin: auto;
-            height:200px;
+            height:auto;
+            padding-bottom:2%;
             margin-top:0px;
 
         }
@@ -121,42 +123,42 @@
             margin-top:10px;
         }
         input{
-            width: 220px;height: 30px;
+            width: 22%;height: 30px;
             padding:0px 0px 0px 5px;
             border-radius:5px;box-shadow: none;
             font-size: 14px;
             background-color: #ffffff;
-            margin-right:15px;
+            margin-right:2%;
             cursor: pointer;
             border: solid 3px #eee;
         }
         select{
-            width:150px;height: 34px;
+            width:15%;height: 34px;
             font-size: 16px;
             border-radius: 5px;box-shadow:none;
-            margin-right:15px;
+            margin-right:1%;
             cursor: pointer;
             border: solid 3px #eee;
         }
         #search{
-            width: 150px;height: 35px;
+            width: 15%;height: 35px;
             border-radius: 6px;
             background-color: #f53838;color: white;
             font-size: 16px;line-height: 19px;border: none;
             font-weight: bold;
-            margin-left:20px;
+            margin-left:1%;
             cursor: pointer;
         }
         #search:hover{
             background-color: #a30000;
         }
         #browse{
-            width: 213px;height: 35px;
+            width: 18%;height: 35px;
             border-radius: 6px;
             background-color: #04be5a;color: white;
             font-size: 16px;line-height: 19px;border: none;
             font-weight: bold;
-            margin-left: 38px;
+            margin-left: 3%;
             cursor: pointer;
         }
         #browse:hover{
@@ -166,7 +168,7 @@
             width: 70%;
             border: 0px solid black;
             margin: auto;
-            margin-top:43px;
+            margin-top:4%;
             box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
         }
         .Mimg img{
@@ -220,10 +222,10 @@
         /* ending of no column */
         #container{
             border: 0px solid red;
-            width:70%;
+            width:70%;height: auto;
             margin: auto;
             display: grid;
-            grid-template-columns: repeat(2,1fr);
+            grid-template-columns: repeat(2,48.9%);
             grid-template-rows: auto;
             gap:24px;
             margin-top:-20px;
@@ -280,7 +282,7 @@
             
         }
         #coupan{
-            width:180px;height:38px;
+            width:45%;height:38px;
             border-radius:6px;
             background-color: #f53838;color: #ffffff;
             font-size: 18px;text-align: center;
@@ -302,7 +304,7 @@
         .ingre{
             border: 0px solid green;
             display: grid;
-            grid-template-columns: 130px 255px 123px;
+            grid-template-columns: 30% 40% 30%;
             grid-template-rows: 63px;
             /* gap:10px; */
             margin: auto;
@@ -317,15 +319,13 @@
             
         }
         .ingre>div img{
-            width:35px;
+            width:25%;
             margin-top:15px;
-            
-            
             cursor: pointer;
         }
         .ingre>div+div>p+p{
             border: 0px solid red;
-            font-size: 26px;
+            font-size: 1.5vw;
             margin-top:4px;
             color: red;
         }
@@ -340,10 +340,13 @@
             color:#444444;
         }
         .banner{
+            width:100%;
+            margin: auto;
             border: 0px solid black;
             margin-top:90px;
             background-color: #e0e0e0;
-            height:280px;
+            height:auto;
+            padding-top:2%;
         }
         .banner>div{
             border: 0px solid blue;
@@ -352,7 +355,8 @@
             
         }
         .banner>div>img{
-            margin-top:23px;
+            width:100%;
+            margin: auto;
         }
         #green{
             border: 1px solid green;
@@ -398,6 +402,7 @@
     </style>
 </head>
 <body>
+  
     <div class="head">
         <div>
             <img src="https://www.kindmeal.my/images/logo-kindmeal.png" alt="">
@@ -426,7 +431,7 @@
             <td onClick="kind()">KindMoments</td>
             <td onClick="hot()">Hot Picks</td>
             <td onClick="recipe()">Recipes</td>
-            <td onClick="dir()">Directory</td>
+            <td onClick="dire()">Directory</td>
             <td onClick="art()">Articles</td>
             <td onClick="hlp()">Help</td>
         </table>
@@ -497,7 +502,7 @@
             </div>
             <div id="discount">
                 <button id="coupan">Get FREE Coupon</button>
-                <img style="width:180px;height: 41px;" src="https://www.linkpicture.com/q/str0.png" alt="">
+                <img style="width:180px;height: 41px;" src="stars\str0.png" alt="">
             </div>
             <div class="ingre">
                 <div>
@@ -528,7 +533,7 @@
             </div>
             <div id="discount">
                 <button id="coupan">Get FREE Coupon</button>
-                <img style="width:180px;height: 41px;" src="https://www.linkpicture.com/q/str9.png" alt="">
+                <img style="width:180px;height: 41px;" src="stars\str9.png" alt="">
             </div>
             <div class="ingre">
                 <div>
@@ -562,7 +567,7 @@
             </div>
             <div id="discount">
                 <button id="coupan">Get FREE Coupon</button>
-                <img style="width:180px;height: 41px;" src="https://www.linkpicture.com/q/str16.png" alt="">
+                <img style="width:180px;height: 41px;" src="stars\str16.png" alt="">
             </div>
             <div class="ingre">
                 <div>
@@ -596,7 +601,7 @@
             </div>
             <div id="discount">
                 <button id="coupan">Get FREE Coupon</button>
-                <img style="width:180px;height: 41px;" src="https://www.linkpicture.com/q/str9.png" alt="">
+                <img style="width:180px;height: 41px;" src="stars\str9.png" alt="">
             </div>
             <div class="ingre">
                 <div>
@@ -630,7 +635,7 @@
             </div>
             <div id="discount">
                 <button id="coupan">Get FREE Coupon</button>
-                <img style="width:180px;height: 41px;" src="https://www.linkpicture.com/q/str1.png" alt="">
+                <img style="width:180px;height: 41px;" src="stars\str1.png" alt="">
             </div>
             <div class="ingre">
                 <div>
@@ -664,7 +669,7 @@
             </div>
             <div id="discount">
                 <button id="coupan">Get FREE Coupon</button>
-                <img style="width:180px;height: 41px;" src="https://www.linkpicture.com/q/str16_1.png" alt="">
+                <img style="width:180px;height: 41px;" src="stars\str16.png" alt="">
             </div>
             <div class="ingre">
                 <div>
@@ -697,7 +702,7 @@
             </div>
             <div id="discount">
                 <button id="coupan">Get FREE Coupon</button>
-                <img style="width:180px;height: 41px;" src="https://www.linkpicture.com/q/str1.png" alt="">
+                <img style="width:180px;height: 41px;" src="stars\str1.png" alt="">
             </div>
             <div class="ingre">
                 <div>
@@ -731,7 +736,7 @@
             </div>
             <div id="discount">
                 <button id="coupan">Get FREE Coupon</button>
-                <img style="width:180px;height: 41px;" src="https://www.linkpicture.com/q/str16.png" alt="">
+                <img style="width:180px;height: 41px;" src="stars\str16.png" alt="">
             </div>
             <div class="ingre">
                 <div>
@@ -764,7 +769,7 @@
             </div>
             <div id="discount">
                 <button id="coupan">Get FREE Coupon</button>
-                <img style="width:180px;height: 41px;" src="https://www.linkpicture.com/q/str1.png" alt="">
+                <img style="width:180px;height: 41px;" src="stars\str9.png" alt="">
             </div>
             <div class="ingre">
                 <div>
@@ -797,7 +802,7 @@
             </div>
             <div id="discount">
                 <button id="coupan">Get FREE Coupon</button>
-                <img style="width:180px;height: 41px;" src="https://www.linkpicture.com/q/str16.png" alt="">
+                <img style="width:180px;height: 41px;" src="stars\str16.png" alt="">
             </div>
             <div class="ingre">
                 <div>
@@ -931,14 +936,15 @@
     function hlp(){
         document.location.href=""
     }
-    function dir(){
-        document.location.href=""
+    function dire(){
+        document.location.href="directory.html"
+        // console.log('hello');
     }
     function hot(){
         document.location.href="https://www.kindmeal.my/hotpicks.htm"
     }
     function recipe(){
-        document.location.href=""
+        document.location.href="recipes.html"
     }
     function kind(){
         document.location.href=""

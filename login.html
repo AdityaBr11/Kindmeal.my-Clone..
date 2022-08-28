@@ -4,23 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🍎Delicious Meat-Free Meals,Vegitiarian cuisanis</title>
+    <title>Document</title>
     <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-
+        *{
+            margin: 0px;padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
         .head{
             width:80%;
-            height:80px;
+            border: 0px solid black;
+            height: 90px;
+            display: flex;
+            justify-content: space-around;
+            margin: auto;
+
+
         }
-        .head img{
-            width: 30%;
-            display: block;
-            margin-left:45%;
+        #media{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            cursor: pointer;
         }
-        
+        #media>img{
+            height:40px;margin-top:25px;margin-right:10px;
+
+        }
+        #login{
+            border: 0px solid black;
+            margin-top:16px;
+            justify-content: space-between;
+            width:280px;
+            font-family:Arial, Helvetica, sans-serif;
+            cursor: pointer;
+            
+        }
+        #login td>p{
+            border: 0px solid red;
+
+            font-size: 13px;
+            cursor: pointer;
+        }
+        #fb{
+            width: 80px;
+            height: 25px;
+            line-height: 20px;
+            padding: 2px 2px 2px 2px;
+            background-color: #35619f;
+            font-weight: bold;
+            font-size: 13px;
+            text-align: center;
+            border-radius: 5px;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+            margin-top:20px;
+        }
+        #em{
+            width: 80px;
+            height: 26px;
+            line-height: 20px;
+            padding: 2px 2px 2px 2px;
+            background-color: #666666;
+            font-weight: bold;
+            font-size: 13px;
+            text-align: center;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            margin-top:20px;
+        }
         .nav{
             display: flex;
             border: 0px solid blue;
@@ -33,133 +85,142 @@
            border: 0px solid red;
            width: 70%;
            margin: auto;
-           font-size:18px;
+           font-size:1.2vw;
            line-height: 40px;
            font-weight:7px;
            font-family: Roboto, Arial, Helvetica, sans-serif;
            color: white;
            cursor: pointer;
         }
+        .na td{
+            border: 0px solid black;
+            text-align: center;
+        }
+        .na td:hover{
+            border: 0px solid black;
+            background-color: #229760;
+        }
         /* end of navbar */
-        .create{
-            border: 2px solid rgb(255, 255, 255);
-            width: 35%;
-            height: auto;
+        /* signup part */
+        #Pdiv{
+            border: 0px solid black;
+            width:70%;
             margin: auto;
-            margin-top:20px;
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            margin-bottom: 60px;
+            display: flex;
         }
-        .create>h2{
-            color: #2bb673;
+        #image{
+            border: 0px solid red;
+            width:25%;height:auto;
+            text-align: center;
+            text-align: justify;
+            color: #808080 ;
+            
         }
-        input{
-            width:87%;
-            height: 38px;
+        #image>div img{
             margin-left:30px;
+            width:80%;
+            margin-bottom:8px;
+        }
+        #image>div{
+            border: 0px solid green;
+            margin-top:20px;
+            padding:13px 10px 13px 24px;
+            border-radius:6px;
+            width:95%;
+            box-shadow:rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        }
+        #image>div p{
+            text-align: center;
+            font-size: 14px;
+        }
+        #info{
+            width:80%;
+            border: 0px solid black;
+            margin-left:20px;
+            padding: 40px;
+        }
+        #info p{
+            margin-top:15px;
+            margin-bottom:30px;
+        }
+        
+        input{
+            width:50%;
+            height: 38px;
             margin-bottom:20px;
             padding:6px 5px;
             border-radius:5px;
-            margin-top:6px;
-            /* border-width: .1px;
-            border-color:grey; */
             font-family: Arial, Helvetica, sans-serif;
             font-size: 15px;
             padding:0px 0px 0px 9px;
             border: solid 3px #eee;
-
-        }
-        label{
-            
-            height: 40px;
-            margin-left:30px;
-            margin-bottom:15px;
-            margin-bottom:30px;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size:16px;
-            color: rgb(72, 70, 70);
-
-        }
-        h2{
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: bold;
-            margin-top: 40px;
         }
         button{
-            width:88%;
+            width:20%;
             height: 40px;
             display: block;
-            margin: auto;
             border-radius: 5px;
             font-weight: bold;
-            border-color:grey;
+            border-color:grey;color: white;
             border: none;
-            background-color: rgb(177, 175, 175);
+            background-color: #f53838;
             cursor: pointer;
-        }
-        #t,#p{
-            color: rgb(39, 39, 158);
-            text-decoration-line: underline;
-            cursor: pointer;
-
-        }
-        #b{
-            font-family: Arial, Helvetica, sans-serif;
-            color: rgb(39, 39, 158);
-            cursor: pointer;
-            margin-bottom:30px;
-        }
-        h3{
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
-            font-size:16px;
-            margin-top:55px;
-            color: gray;
-            font-weight: lighter;
-            margin-bottom: 20px;
-        }
-        img{
-            display: block;
-            margin: auto;
-            width:20%;
-            margin-top:20px;
-            border-radius:16px;
+            margin-bottom:20px;
         }
         button:hover{
-            background-color: #2bb673;
-            color: white;
+            background-color: #d22929;
         }
-         /* bootom */
+        #blue{
+            color: #2184ff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .banner{
+            width:100%;
+            margin: auto;
+            border: 0px solid black;
+            margin-top:90px;
+            background-color: #e0e0e0;
+            height:auto;
+            padding-top:2%;
+        }
+        .banner>div{
+            border: 0px solid blue;
+            width: 70%;
+            margin: auto;
+            
+        }
+        .banner>div>img{
+            width:100%;
+            margin-top:23px;
+        }
         #green{
-            border: 0px solid green;
+            border: 1px solid green;
             background-color: #2bb673;
-            font-family: Roboto, Arial, Helvetica, sans-serif;
-            width: 100%;
+            
         }
         #green>div h4{
             margin-bottom:10px;
             cursor: pointer;
-            margin-top:15px;
-            
+            margin-top:10px;
             
         }
         #green>div p{
             font-size:12px;
+            margin-bottom:5px;
+            margin-top: 0px;
             cursor: pointer;
-            margin-bottom:4px;
         }
         .grn{
-            width:70%;
+            width:60%;
             border: 0px solid green;
-            height: auto;
+            height: 310px;
             display: grid;
             grid-template-columns: repeat(5,1fr);
-            grid-template-rows: repeat(1,280px);
+            grid-template-rows: repeat(1,290px);
             gap:10px;
             margin: auto;
             color: white;
-            margin-bottom: 0px;
         }
         #p{
             width:60%;
@@ -169,8 +230,10 @@
         #p p{
             font-size: 10px;
             color: white;
+            margin-bottom:10px;
 
-        }
+        }  
+
     </style>
 </head>
 <body>
@@ -178,37 +241,78 @@
         <div>
             <img src="https://www.kindmeal.my/images/logo-kindmeal.png" alt="">
         </div>
+
+        <div id="media">
+            <img  src="https://www.kindmeal.my/images/follow_blog_grey.png" alt="">
+            <img  src="https://www.kindmeal.my/images/follow_facebook_grey.png" alt="">
+            <img  src="https://www.kindmeal.my/images/follow_twitter_grey.png" alt="">
+        </div>
+
+        <div>
+            <table id="login">
+                <td> <p >Login</td>
+                <td><button  id="fb" onclick="LoginFB();"title="Login with Facebook Account">Facebook</button>
+                <td> <button id="em" onclick="email()">Email</button>
+                <td><p id="signup" onclick="signup()">Sign up</td>
+            </table>
+        </div>
     <!-- starting of navbar -->
     </div>
     <div class="nav">
         <table class="na">
-            <td>Home</td>
-            <td>Meal Deals</td>
-            <td>KindMoments</td>
-            <td>Hot Picks</td>
-            <td>Recipes</td>
-            <td>Directory</td>
-            <td>Articles</td>
-            <td>Help</td>
+            <td onClick="home()">Home</td>
+            <td onClick="meal()">Meal Deals</td>
+            <td onClick="kind()">KindMoments</td>
+            <td onClick="hot()">Hot Picks</td>
+            <td onClick="recipe()">Recipes</td>
+            <td onClick="dir()">Directory</td>
+            <td onClick="art()">Articles</td>
+            <td onClick="hlp()">Help</td>
         </table>
     </div>
-    <!-- end of navbar -->
-    <img src="https://d2skenm2jauoc1.cloudfront.net/assets/restaurant-website-builder/img/pages/why-food-photography-is-important/why-food-photography-is-important-for-restaurants-66727ced1d.png" alt="">
-    <div class="create">
-        <h2>Login</h2>
-        <form>
-            <label for="">Email</label><br>
-            <input id="email" type="email" placeholder="Enter email"><br>
-            <!-- <label for="">Mobile Number</label><br>
-            <input id="mob" type="number" placeholder="Enter your Number"><br> -->
-            <label for="password">Password</label><br>
-            <input type="password" name="password" id="password" placeholder="Enter password" /><br>
-            <button onClick="loginfun()" type="submit">Login</button>
-            <h3>Don't have an account?
-                <span id="b" >Sign Up</span></h3>
-        
-
-        </form>
+    <div id="Pdiv">
+        <div id="image">
+            <div>
+                <img src="https://www.kindmeal.my/images/join_normal.png" alt="">
+                <p>Food Lover Sign Up</p>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/images/join_shop.png" alt="">
+                <p>Restaurent Sign Up</p>
+            </div>
+            <div>
+                <p id="pbig" style="font-size:24px;margin-right:20px;margin-bottom:6px;color: black;">Why KindMeal?</p>
+                <ul>
+                    <li>Exclusive meat-free deals</li>
+                    <li>Share yummy food moments</li>
+                    <li>Meet friendly food lovers</li>
+                    <li>Discover cool restaurants</li>
+                    <li>Email updates on tasty deals</li>
+                    <li>Instant coupons & dining</li>
+                    <li>No upfront payment, booking or printing</li>
+                </ul>
+                <p> <a href="">More about KindMeal »</a> </p>
+            </div>
+    
+        </div>
+        <div id="info">
+            <p style="font-size:30px;color: #2bb673;">Welcome to MealDeal Page</p>
+            <form>
+                <label for="">Your Name</label><br>
+                <input id="name" type="text"><br>
+                <label for="">Email </label><br>
+                <input id="mail" type="email" placeholder=""><br>
+                <label for="password">Password</label><br>
+                <input type="password" name="password" id="password" placeholder="" /><br>
+                <button onClick="loginfun()" type="submit">Login</button>
+            
+            </form>
+        </div>
+    </div>
+    <div class="banner">
+        <div>
+            <img src="https://www.kindmeal.my/images/how_kindmeal_works.png" alt="">
+        </div>
     </div>
     <div id="green">
         <div class="grn">
@@ -275,35 +379,69 @@
                 <p>Medical Fund</p>
             </div>
         </div>
-         <!-- <div id="p">
+        <div id="p">
             <p> Copyright © KindMeal.my, 2014 - 2022. All rights reserved.</p>
-            <p>This website promotes compassionate, meat-free dining experience. Some food may contain eggs, dairy products or alcohol, please view individual listings for details.</p>  -->
+            <p>This website promotes compassionate, meat-free dining experience. Some food may contain eggs, dairy products or alcohol, please view individual listings for details.</p> 
      </div>
 </body>
-</html>
-<script>
-
-    function loginfun(){
+<script> 
+   function loginfun(){
         event.preventDefault()
-        let ma=document.getElementById("email").value;
-        let pass=document.getElementById("password").value;
+        let name=document.getElementById("name").value;
+        let mail=document.getElementById("mail").value;
+        let password=document.getElementById("password").value;
         let data=JSON.parse(localStorage.getItem("user")) ||0;
         // console.log(data.email)
         // console.log(data.password);
-        if(ma==""||pass==""){
+        if(name==""||mail==""||password==""){
             alert("Please fill the information")
-        }else if(data.email!==ma){
+        }else if(data.name!==name){
+            alert("wrong name")
+        }else if(data.email!=mail){
             alert("wrong email")
-        }else if(data.password!=pass){
-            alert("wrong password")
-        }else if(data.email==ma||data.password==pass){
+        }else if(data.password!=password){
+            alert("password is wrong")
+
+        }else if(data.name===name||data.mail==mail||data.password==password){
             // alert("Login Successful")
             window.location.href="index.html"
         }
-    
-        
-        
-       
-       
      }
+     function btn(){
+        document.location.href="signup.html"
+    }
+    function LoginFB(){
+        document.location.href="https://www.facebook.com/login.php?skip_api_login=1&api_key=292733157519852&kid_directed_site=0&app_id=292733157519852&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv2.9%2Fdialog%2Foauth%3Fclient_id%3D292733157519852%26redirect_uri%3Dhttps%253A%252F%252Fwww.kindmeal.my%252Flogin.php%253Faction%253Dfacebook%26state%3Da20fd889828c43e49d9cb9572ee509de%26display%3Dpopup%26scope%3Demail%252Cuser_birthday%252Cuser_location%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D093ae1bb-7c73-4185-9c66-d2d5fa050cf8%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.kindmeal.my%2Flogin.php%3Faction%3Dfacebook%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3Da20fd889828c43e49d9cb9572ee509de%23_%3D_&display=popup&locale=en_GB&pl_dbl=0"
+    }
+    function email(){
+        document.location.href="https://www.google.com/intl/en_in/gmail/about/"
+    }
+    function signup(){
+        document.location.href="signup.html"
+    }
+    function home(){
+        document.location.href="index.html"
+    }
+    function meal(){
+        document.location.href="meal.html"
+    }
+    function art(){
+        document.location.href="https://www.kindmeal.my/articles/"
+    }
+    function hlp(){
+        document.location.href="https://www.kindmeal.my/help.htm"
+    }
+    function dire(){
+        document.location.href="directory.html"
+    }
+    function hot(){
+        document.location.href="https://www.kindmeal.my/hotpicks.htm"
+    }
+    function recipe(){
+        document.location.href="recipes.html"
+    }
+    function kind(){
+        document.location.href=""
+    }
 </script>
+</html>

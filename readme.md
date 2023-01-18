@@ -15,8 +15,8 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="netlify" />
-
 </p>
+<h3 align="center"><a href="https://dreamy-bublanina-b6f586.netlify.app"><strong>Want to see live preview »</strong></a></h3>
 
 <br />
 
